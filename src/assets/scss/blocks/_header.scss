@@ -1,0 +1,233 @@
+@use '../global.scss';
+
+.header {
+  position: relative;
+  width: global.$mobile-width;
+  margin: 0 auto;
+  padding: 15px 0 27px;
+  background: linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 477px,
+      global.$basic-blue 477px,
+      global.$basic-blue 100%
+    ),
+    url(../../assets/img/mobile-traveller-bg.png) 80px 222px no-repeat,
+    url(../../assets/img/mobile-globe-bg.png) 0 0 no-repeat;
+
+  @media (min-width: global.$tablet-width) {
+    width: global.$tablet-width;
+    padding: 15px 0 212px;
+    background: url(../../assets/img/tablet-traveller-bg.png) 285px 404px
+        no-repeat,
+      url(../../assets/img/tablet-globe-bg.png) 0 382px no-repeat,
+      global.$special-blue;
+  }
+}
+
+.header__container {
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: global.$tablet-width) {
+    width: 688px;
+    padding: 26px 0 0 0;
+  }
+}
+
+.header__nav-container {
+  width: 270px;
+  margin: 0 auto 53px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: global.$tablet-width) {
+    width: 688px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 68px;
+  }
+}
+
+.header__mobile-logo {
+  @media (min-width: global.$tablet-width) {
+    display: none;
+  }
+}
+
+.header__tablet-logo {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.header__nav-menu-open-button {
+  @media (min-width: global.$tablet-width) {
+    margin: 17px 0 0 166px;
+  }
+}
+
+.header__nav-menu-auth-button {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    margin-left: 143px;
+    display: block;
+    background: global.$basic-yellow;
+    width: 188px;
+    padding: 13px 0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
+
+.header__nav-menu-auth-text {
+  display: inline-block;
+  text-transform: uppercase;
+  color: global.$basic-blue;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.header__title {
+  margin: 0 auto 246px;
+  width: 238px;
+  color: global.$basic-white;
+  font-family: global.$bold;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 40px;
+  text-align: center;
+
+  @media (min-width: global.$tablet-width) {
+    width: 399px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 86px;
+  }
+}
+
+.header__quote-container {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+    width: 264px;
+    margin: 0 0 0 8px;
+    padding: 0;
+  }
+}
+
+.header__quote {
+  @media (min-width: global.$tablet-width) {
+    margin-bottom: 47px;
+    padding: 0;
+    display: block;
+  }
+}
+
+.header__quote-text {
+  @media (min-width: global.$tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    width: 264px;
+    color: global.$basic-white;
+    font-family: global.$light;
+    font-style: normal;
+    margin: 0 0 0 25px;
+    padding: 0;
+    display: block;
+  }
+}
+
+.header__quote-author {
+  @media (min-width: global.$tablet-width) {
+    margin: 0 0 0 25px;
+    padding: 0;
+  }
+}
+
+.header__quote-author-name {
+  @media (min-width: global.$tablet-width) {
+    margin: 0;
+    padding: 0;
+    width: 264px;
+    color: global.$basic-white;
+    font-family: global.$bold;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.quote__br-tablet {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+  }
+}
+
+.header__nav-list {
+  width: 270px;
+  display: flex;
+  justify-content: flex-start;
+
+  @media (min-width: global.$tablet-width) {
+    display: none;
+  }
+}
+
+.header__nav-link {
+  text-decoration: none;
+}
+
+.header__nav-link--phone {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: global.$special-orange;
+}
+
+.header__nav-link--email {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: global.$special-dark-yellow;
+}
+
+.header__nav-link--authorization {
+  background: global.$basic-yellow;
+  width: 190px;
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__nav-link-auth-text {
+  display: inline-block;
+  text-transform: uppercase;
+  color: global.$basic-blue;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.header__nav-link-phone-icon path,
+.header__nav-link-email-icon path {
+  fill: global.$basic-blue;
+}

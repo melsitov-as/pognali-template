@@ -1,0 +1,117 @@
+@use '../global.scss';
+
+.header-mobile-popup-menu {
+  width: global.$mobile-width;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  left: 0;
+  width: global.$mobile-width;
+  margin: 0 auto;
+  padding: 25px 0 31px 0;
+  background: global.$basic-white;
+}
+
+.header-mobile-popup-menu__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.header-mobile-popup-menu__logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 66px;
+}
+
+.header-mobile-popup-menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.header-mobile-popup-menu__nav-link {
+  font-family: global.$medium;
+  font-size: 30px;
+  font-style: normal;
+  color: global.$basic-dark-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header-mobile-popup-menu__auth-button {
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 15px 0;
+  box-sizing: border-box;
+  background: global.$basic-yellow;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.header-mobile-popup-menu__auth-text {
+  text-transform: uppercase;
+  font-family: global.$bold;
+  font-size: 17px;
+  font-style: normal;
+  color: global.$basic-blue;
+}
+
+.header-mobile-popup-menu__contacts-list {
+  margin-bottom: 28px;
+}
+
+.header-mobile-popup-menu__contacts-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-mobile-popup-menu__contacts-img-container {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: global.$basic-dark-blue-2;
+}
+
+.header-mobile-popup-menu__contacts-text {
+  margin-left: 17px;
+  display: inline-block;
+  font-family: global.$bold;
+  font-size: 16px;
+  font-style: normal;
+  color: global.$basic-dark-blue;
+  text-transform: uppercase;
+}
+
+.header-mobile-popup-menu__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mobile-popup-menu__social-item {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mobile-popup-menu__social-item--telegram svg {
+  margin: 2px 2px 0 0;
+}
+
+.header-mobile-popup-menu__social-item--whatsapp svg {
+  margin: 0 2px 0 3px;
+}

@@ -1,0 +1,10 @@
+@use '../global.scss';
+
+.main {
+  width: global.$mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: global.$tablet-width) {
+    width: global.$tablet-width;
+  }
+}

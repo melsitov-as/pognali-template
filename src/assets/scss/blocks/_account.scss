@@ -1,0 +1,250 @@
+@use '../global.scss';
+
+.account {
+  position: relative;
+  z-index: 6;
+  width: global.$mobile-width;
+  margin: -30px auto 0;
+  padding: 100px 0 29px 0;
+  border-radius: 0 0 30px 30px;
+  background: global.$basic-dark-blue;
+
+  @media (min-width: global.$tablet-width) {
+    width: global.$tablet-width;
+    margin: -60px auto 0;
+    padding: 142px 0 60px;
+    border-radius: 0 0 58px 58px;
+  }
+}
+
+.account__container {
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: global.$tablet-width) {
+    width: 618px;
+  }
+}
+
+.account__title {
+  margin: 0 0 20px 30px;
+  padding: 0;
+  color: global.$special-orange;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 45px;
+    margin: 0 auto 70px;
+    text-align: center;
+  }
+}
+
+.account__description {
+  width: 210px;
+  margin: 0 auto 28px;
+  padding: 0;
+  color: global.$basic-white;
+  font-family: global.$light;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  text-align: center;
+
+  @media (min-width: global.$tablet-width) {
+    width: 618px;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 auto 68px;
+  }
+}
+
+.account__description-br-mobile {
+  @media (min-width: global.$tablet-width) {
+    display: none;
+  }
+}
+
+.account__description-br-tablet {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+  }
+}
+
+.account__auth-link {
+  display: inline-block;
+  color: global.$basic-yellow;
+
+  @media (min-width: global.$tablet-width) {
+    text-decoration: underline;
+  }
+}
+
+.account__form {
+  width: 270px;
+  margin: 0 auto 26px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (min-width: global.$tablet-width) {
+    width: 616px;
+    margin: 0 auto 58px;
+  }
+}
+
+.account__input {
+  border-radius: 12px 0 0 12px;
+  width: 226px;
+  padding: 24px 0 22px 24px;
+  box-sizing: border-box;
+
+  @media (min-width: global.$tablet-width) {
+    width: 540px;
+    padding: 34px 0 31px 36px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+  }
+}
+
+.account__input::placeholder {
+  font-family: global.$bold;
+  font-size: 18px;
+  font-style: normal;
+  color: global.$special-grey-transparent-1;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 24px;
+    border-radius: 15px 0 0 15px;
+  }
+}
+
+.account__form-button {
+  margin: 2px 0 0 -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 60px;
+  height: 62px;
+  background: global.$basic-yellow;
+
+  @media (min-width: global.$tablet-width) {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 20px 20px 0;
+    margin: 0;
+  }
+}
+
+.account__form-button-icon {
+  @media (min-width: global.$tablet-width) {
+    width: 14px;
+    height: 16px;
+    viewbox: '0 0 14 16';
+  }
+}
+
+.account__questions {
+  width: 216px;
+  margin: 0 auto 19px;
+  padding: 0;
+  color: global.$basic-white;
+  font-family: global.$light;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22px;
+  text-align: center;
+
+  @media (min-width: global.$tablet-width) {
+    width: 625px;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 1%;
+    margin: 0 auto 42px;
+  }
+}
+
+.account__questions-br-mobile {
+  @media (min-width: global.$tablet-width) {
+    display: none;
+  }
+}
+
+.account__contacts-item {
+  width: 270px;
+  display: flex;
+  justify-content: flex-start;
+
+  @media (min-width: global.$tablet-width) {
+    width: 400px;
+  }
+}
+
+.account__contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.account__contacts-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.account__contacts-icon-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: global.$basic-dark-blue-2;
+
+  @media (min-width: global.$tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.account__contacts-icon {
+  display: inline-block;
+}
+
+.account__contacts-icon--phone {
+  @media (min-width: global.$tablet-width) {
+    width: 27px;
+    height: 26px;
+    viewbox: '0 0 27 26';
+  }
+}
+
+.account__contacts-icon--email {
+  @media (min-width: global.$tablet-width) {
+    width: 36px;
+    height: 38px;
+    viewbox: '0 0 36 38';
+  }
+}
+
+.account__contacts-text {
+  margin-left: 16px;
+  display: inline-block;
+  color: global.$basic-yellow;
+  font-family: global.$bold;
+  font-size: 16px;
+  font-style: normal;
+  text-transform: uppercase;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 28px;
+    margin-left: 24px;
+  }
+}

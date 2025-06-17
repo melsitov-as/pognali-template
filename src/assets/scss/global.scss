@@ -1,0 +1,63 @@
+$bold: 'Blogger Sans bold', 'Arial', sans-serif;
+$bold-italic: 'Blogger Sans bold italic', 'Arial', sans-serif;
+$italic: 'Blogger Sans italic', 'Arial', sans-serif;
+$light: 'Blogger Sans light', 'Arial', sans-serif;
+$light-italic: 'Blogger Sans light italis', 'Arial', sans-serif;
+$medium: 'Blogger Sans medium', 'Arial', sans-serif;
+$medium-italic: 'Blogger Sans medium italic', 'Arial', sans-serif;
+$blogger-sans: 'Blogger Sans', 'Arial', sans-serif;
+
+$basic-white: #ffffff;
+$basic-black: #000000;
+$basic-dark-blue: #192144;
+$basic-dark-blue-2: #121936;
+$basic-dark-blue-3: #141b3b;
+$basic-blue: #161c35;
+$basic-blue-2: #1d2e5b;
+$special-text-blue: #132576;
+$special-blue: #182044;
+$special-orange: #ff8d30;
+$special-light-orange: #ffa530;
+$special-dark-yellow: #ffbd30;
+$basic-yellow: #ffd74b;
+$basic-grey-1: #e6e8f1;
+$basic-grey-2: #edeff6;
+$button-grey: #e2e5f2;
+$special-grey: #444444;
+$basic-red: #f97676;
+$basic-green: #81e31e;
+$line-grey: #f2f2f2;
+$line-grey-2: #e1e3e9;
+$special-grey-transparent-1: rgba(68, 68, 68, 0.3);
+$special-grey-transparent-2: rgba(22, 28, 53, 0.3);
+$basic-black-transparent-1: rgba(0, 0, 0, 0.6);
+$basic-white-transparent-1: rgba(255, 255, 255, 0.3);
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+
+body {
+  min-width: $mobile-width;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
