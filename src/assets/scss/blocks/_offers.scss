@@ -19,6 +19,15 @@
       url(../../assets/img/offers-bg-2-tablet.png) 530px 211px no-repeat,
       global.$basic-grey-2;
   }
+
+  @media (min-width: global.$desktop-width) {
+    width: global.$desktop-width;
+    background: url(../../assets/img/offers-bg-1-desktop.png) 1110px 345px
+        no-repeat,
+      url(../../assets/img/offers-bg-2-desktop.png) 750px 297px no-repeat,
+      global.$basic-grey-2;
+    padding: 174px 0 165px;
+  }
 }
 
 .offers__container {
@@ -27,6 +36,10 @@
 
   @media (min-width: global.$tablet-width) {
     width: 688px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 1176px;
   }
 }
 
@@ -45,6 +58,10 @@
     width: 482px;
     margin: 0 auto 85px;
   }
+
+  @media (min-width: global.$desktop-width) {
+    margin: 0 auto 145px;
+  }
 }
 
 .offers__list {
@@ -52,6 +69,10 @@
 
   @media (min-width: global.$tablet-width) {
     margin: 0 0 28px 0;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    margin: 0 0 30px 0;
   }
 }
 
@@ -65,6 +86,10 @@
     justify-content: flex-start;
     align-items: center;
     width: 653px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 903px;
   }
 }
 
@@ -102,6 +127,10 @@
     border-top: 1px solid global.$line-grey-2;
     box-sizing: border-box;
     width: 399px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 527px;
   }
 }
 

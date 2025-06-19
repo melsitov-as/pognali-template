@@ -14,6 +14,7 @@ $basic-dark-blue-2: #121936;
 $basic-dark-blue-3: #141b3b;
 $basic-blue: #161c35;
 $basic-blue-2: #1d2e5b;
+$basic-blue-2-transparent: rgba(29, 46, 91, 0.14);
 $special-text-blue: #132576;
 $special-blue: #182044;
 $special-orange: #ff8d30;
@@ -22,6 +23,7 @@ $special-dark-yellow: #ffbd30;
 $basic-yellow: #ffd74b;
 $basic-grey-1: #e6e8f1;
 $basic-grey-2: #edeff6;
+$basic-grey-3: #f3f4f8;
 $button-grey: #e2e5f2;
 $special-grey: #444444;
 $basic-red: #f97676;
@@ -31,10 +33,12 @@ $line-grey-2: #e1e3e9;
 $special-grey-transparent-1: rgba(68, 68, 68, 0.3);
 $special-grey-transparent-2: rgba(22, 28, 53, 0.3);
 $basic-black-transparent-1: rgba(0, 0, 0, 0.6);
+$basic-black-transparent-2: rgba(0, 0, 0, 0.05);
 $basic-white-transparent-1: rgba(255, 255, 255, 0.3);
 
 $mobile-width: 320px;
 $tablet-width: 768px;
+$desktop-width: 1440px;
 
 body {
   min-width: $mobile-width;

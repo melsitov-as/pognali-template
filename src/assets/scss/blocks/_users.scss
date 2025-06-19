@@ -23,6 +23,17 @@
     padding: 194px 0 88px;
     border-radius: 0 0 58px 58px;
   }
+
+  @media (min-width: global.$desktop-width) {
+    width: global.$desktop-width;
+    padding: 185px 0 141px;
+    margin: -63px auto 0;
+    background: url(../../assets/img/users-bg-1-tablet.png) 191px 450px
+        no-repeat,
+      url(../../assets/img/users-bg-2-tablet.png) 547px 196px no-repeat,
+      url(../../assets/img/users-bg-3-tablet.png) 61px 132px no-repeat,
+      global.$basic-dark-blue;
+  }
 }
 
 .users__container {
@@ -31,6 +42,13 @@
 
   @media (min-width: global.$tablet-width) {
     width: 622px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 1320px;
+    display: grid;
+    grid-template-rows: 100px 174px 133px 80px;
+    grid-template-columns: 52% 48%;
   }
 }
 
@@ -45,6 +63,12 @@
   @media (min-width: global.$tablet-width) {
     margin: 0 0 52px 0;
     font-size: 45px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin: 0 0 52px 70px;
   }
 }
 
@@ -64,6 +88,12 @@
     line-height: 34px;
     width: 427px;
   }
+
+  @media (min-width: global.$desktop-width) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin: 4px 0 40px 70px;
+  }
 }
 
 .users__description-addition {
@@ -82,6 +112,12 @@
     width: 260px;
     margin: 0 0 60px 3px;
   }
+
+  @media (min-width: global.$desktop-width) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin: 4px 0 40px 70px;
+  }
 }
 
 .users__description-br-tablet {
@@ -99,6 +135,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 81px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    margin: 11px 0 0 3px;
   }
 }
 
@@ -243,6 +283,15 @@
     margin: 0 auto;
     padding: 24px 35px 27px 30px;
   }
+
+  @media (min-width: global.$desktop-width) {
+    align-self: start;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    width: 280px;
+    margin: 7px 0 0 70px;
+    padding: 24px 35px 28px 30px;
+  }
 }
 
 .users__button-icon {
@@ -252,6 +301,7 @@
     width: 14px;
     height: 16px;
     viewbox: '0 0 14 16';
+    margin-top: 2px;
   }
 }
 
@@ -351,16 +401,15 @@
 
 .users__circle-label {
   display: inline-block;
-  font-size: 24px; /* Размер шрифта, можно настроить */
+  font-size: 24px;
   font-family: global.$bold;
   color: global.$basic-white;
   border-bottom: 1px solid global.$basic-white-transparent-1;
-  /* Для более мелких контейнеров может потребоваться уменьшить font-size */
 }
 
 .users__circle-level-text {
   display: inline-block;
-  font-size: 14px; /* Размер шрифта, можно настроить */
+  font-size: 14px;
   font-family: global.$blogger-sans;
   color: global.$basic-white;
 }

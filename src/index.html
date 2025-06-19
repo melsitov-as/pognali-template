@@ -66,7 +66,25 @@
               alt=""
               class="header__tablet-logo"
             />
+            <img
+              src="../../assets/img/logo-desktop.png"
+              alt=""
+              class="header__desktop-logo"
+            />
           </a>
+
+          <ul class="header__site-nav-list">
+            <li class="header__site-nav-item">
+              <a href="#" class="header__site-nav-link">О сервисе</a>
+            </li>
+            <li class="header__site-nav-item">
+              <a href="#" class="header__site-nav-link">Направления</a>
+            </li>
+            <li class="header__site-nav-item">
+              <a href="#" class="header__site-nav-link">Попутчики</a>
+            </li>
+          </ul>
+
           <a href="#" class="header__nav-menu-open-button">
             <svg
               width="25"
@@ -89,7 +107,7 @@
             <div class="header-mobile-popup-menu__logo-container">
               <a href="index.html" class="header-mobile-popup-menu__logo-link">
                 <svg
-                  class="header-mobile-popup-menu__logo-icon"
+                  class="header-mobile-popup-menu__mobile-logo-icon"
                   width="100"
                   height="15"
                   viewBox="0 0 100 15"
@@ -124,6 +142,11 @@
                     />
                   </defs>
                 </svg>
+                <img
+                  src="../../assets/img/dark-logo-tablet.png"
+                  alt=""
+                  class="header-mobile-popup-menu__tablet-logo"
+                />
               </a>
               <a href="#" class="header-mobile-popup-menu__close-button">
                 <svg
@@ -180,8 +203,11 @@
                 class="header-mobile-popup-menu__contacts-item header-mobile-popup-menu__contacts-item--phone"
               >
                 <a href="#" class="header-mobile-popup-menu__contacts-link">
-                  <div class="header-mobile-popup-menu__contacts-img-container">
+                  <div
+                    class="header-mobile-popup-menu__contacts-icon-container"
+                  >
                     <svg
+                      class="header-mobile-popup-menu__contacts-icon header-mobile-popup-menu__contacts-icon--phone"
                       width="19"
                       height="17"
                       viewBox="0 0 19 17"
@@ -206,8 +232,11 @@
                 class="header-mobile-popup-menu__contacts-item header-mobile-popup-menu__contacts-item--email"
               >
                 <a href="#" class="header-mobile-popup-menu__contacts-link">
-                  <div class="header-mobile-popup-menu__contacts-img-container">
+                  <div
+                    class="header-mobile-popup-menu__contacts-icon-container"
+                  >
                     <svg
+                      class="header-mobile-popup-menu__contacts-icon header-mobile-popup-menu__contacts-icon--email"
                       width="24"
                       height="25"
                       viewBox="0 0 24 25"
@@ -235,7 +264,7 @@
               >
                 <a href="#" class="header-mobile-popup-menu__social-link">
                   <svg
-                    class="header-mobile-popup-menu__social-img"
+                    class="header-mobile-popup-menu__social-icon"
                     width="33"
                     height="22"
                     viewBox="0 0 48 48"
@@ -265,6 +294,7 @@
               >
                 <a href="#" class="header-mobile-popup-menu__social-link">
                   <svg
+                    class="header-mobile-popup-menu__social-icon"
                     width="23"
                     height="12"
                     viewBox="0 0 23 12"
@@ -283,6 +313,7 @@
               >
                 <a href="#" class="header-mobile-popup-menu__social-link">
                   <svg
+                    class="header-mobile-popup-menu__social-icon"
                     width="33"
                     height="22"
                     viewBox="0 0 48 48"
@@ -311,11 +342,11 @@
           </div>
         </div>
 
-        <div class="header-scroll-menu-mobile visually-hidden">
-          <div class="header-scroll-menu-mobile__container">
-            <a href="index.html" class="header-scroll-menu-mobile__logo-link">
+        <div class="header-scroll-menu visually-hidden">
+          <div class="header-scroll-menu__container">
+            <a href="index.html" class="header-scroll-menu__logo-link">
               <svg
-                class="header-nav-menu__logo-icon"
+                class="header-scroll-menu__mobile-logo-icon"
                 width="100"
                 height="15"
                 viewBox="0 0 100 15"
@@ -350,8 +381,13 @@
                   />
                 </defs>
               </svg>
+              <img
+                src="../../assets/img/dark-logo-tablet.png"
+                alt=""
+                class="header-scroll-menu__tablet-logo"
+              />
             </a>
-            <a href="#" class="header-scroll-menu-mobile__open-button">
+            <a href="#" class="header-scroll-menu__open-button">
               <svg
                 width="25"
                 height="11"
@@ -362,6 +398,10 @@
                 <rect width="25" height="3" rx="1.5" fill="#CCCCCC" />
                 <rect y="8" width="25" height="3" rx="1.5" fill="#CCCCCC" />
               </svg>
+            </a>
+
+            <a href="#" class="header-scroll-menu__auth-button">
+              <span class="header-scroll-menu__auth-text">Авторизация</span>
             </a>
           </div>
         </div>
@@ -428,6 +468,80 @@
             </p>
           </figcaption>
         </figure>
+
+        <div class="header__bottom-nav-container">
+          <a href="index.html" class="header__bottom-logo-link">
+            <img
+              src="../../assets/img/dark-logo-desktop.png"
+              alt=""
+              class="header__bottom-desktop-logo"
+            />
+          </a>
+
+          <ul class="header__bottom-site-nav-list">
+            <li class="header__bottom-site-nav-item">
+              <a href="#" class="header__bottom-site-nav-link">О сервисе</a>
+            </li>
+            <li class="header__bottom-site-nav-item">
+              <a href="#" class="header__bottom-site-nav-link">Направления</a>
+            </li>
+            <li class="header__bottom-site-nav-item">
+              <a href="#" class="header__bottom-site-nav-link">Попутчики</a>
+            </li>
+          </ul>
+
+          <ul class="header__bottom-nav-list">
+            <li class="header__bottom-nav-item">
+              <a
+                href="#"
+                class="header__bottom-nav-link header__bottom-nav-link--phone"
+              >
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.77429 8.22389C9.77429 8.41289 9.92792 8.56139 10.1157 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1603 9.59414C11.348 9.59414 11.5017 9.44226 11.5017 9.25664C11.5017 8.50064 10.8804 7.88639 10.1157 7.88639C9.92792 7.88639 9.77429 8.03827 9.77429 8.22389ZM15.332 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1813 3.76215 10.1157 3.76215C9.92792 3.76215 9.77429 3.914 9.77429 4.09965C9.77429 4.28527 9.92792 4.43715 10.1157 4.43715C12.8057 4.43715 14.9906 6.60051 14.9906 9.25664C14.9906 9.44226 15.1442 9.59414 15.332 9.59414Z"
+                    fill="#161C35"
+                  />
+                  <path
+                    d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4339 9.59411 13.5875 9.44223 13.5875 9.25661C13.5875 7.36324 12.0308 5.82424 10.1157 5.82424C9.9279 5.82424 9.77427 5.97612 9.77427 6.16174C9.77427 6.35074 9.9279 6.49924 10.1157 6.49924C11.6553 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1157 1.69998C9.9279 1.69998 9.77427 1.85186 9.77427 2.03748C9.77427 2.22312 9.9279 2.37498 10.1157 2.37498C13.9562 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4212 9.59411C17.6089 9.59411 17.7626 9.44223 17.7626 9.25661C17.7626 5.0885 14.3317 1.69998 10.1157 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2493 13.4619 11.6622 14.5812 10.7312 13.7375L8.30011 11.3L6.20004 9.25661C5.14495 7.92348 6.32635 7.60623 6.73941 6.85699L6.98179 6.41825C7.25489 5.91873 7.35388 5.35849 7.27196 4.79823C7.19345 4.23799 6.93741 3.72836 6.52775 3.32336C6.02935 2.83062 5.36707 2.56062 4.66042 2.56062C3.95376 2.56062 3.28807 2.83062 2.78964 3.32336L2.61556 3.49886C1.69383 4.41012 1.588 5.97948 2.31514 7.92348C3.0013 9.77973 4.3839 11.7912 6.20004 13.5867C8.96862 16.3239 12.0513 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4039 17.1339L16.5814 16.9584C17.0764 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5814 13.2627C15.7587 12.4494 14.4717 12.2671 13.4509 12.8139Z"
+                    fill="#161C35"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__bottom-nav-item">
+              <a href="#" class="header__nav-link header__nav-link--email">
+                <svg
+                  width="19"
+                  height="17"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.0166 3.32528L8.7666 7.55572C8.9934 7.69747 9.2868 7.76467 9.582 7.76467C9.8772 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.9689C1.1616 1.97498 1.5774 3.04913 2.0166 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.8772 10.0757 9.582 10.0757C9.2868 10.0757 9.0726 10.0537 8.7666 9.86677C8.4606 9.67987 2.3469 5.94082 1.8474 5.63737C1.4964 5.42317 1.5 5.67412 1.5 5.86732V13.525C1.5 13.966 2.0094 14.575 2.4 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z"
+                    fill="#161C35"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="header__bottom-nav-item">
+              <a
+                href="#"
+                class="header__bottom-nav-link header__bottom-nav-link--authorization"
+              >
+                <span class="header__bottom-nav-link-auth-text"
+                  >Авторизация</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -641,6 +755,8 @@
               </div>
             </li>
           </ul>
+
+          <div class="routes__gradient"></div>
 
           <a href="#" class="routes__button">
             <span class="routes__button-text">Показать все</span>
@@ -1184,6 +1300,33 @@
             <span class="offers__button-text">Показать тарифы для бизнеса</span>
           </a>
         </div>
+
+        <div class="business-rates visually-hidden">
+          <div class="business-rates__container">
+            <h3 class="business-rates__title">Бизнес-тарифы</h3>
+            <ul class="business-rates__list">
+              <li class="business-rates__item">
+                <p class="business-rates__item-offer">Реклама у блоггера</p>
+                <p class="business-rates__item-price">300 000 руб./пост</p>
+              </li>
+              <li class="business-rates__item">
+                <p class="business-rates__item-offer">Накрутка подписчиков</p>
+                <p class="business-rates__item-price">от 1 руб./шт.</p>
+              </li>
+              <li class="business-rates__item">
+                <p class="business-rates__item-offer">Лайки от ботов</p>
+                <p class="business-rates__item-price">от 20 коп./лайк</p>
+              </li>
+              <li class="business-rates__item">
+                <p class="business-rates__item-offer">Ваш продакт-плейсмент</p>
+                <p class="business-rates__item-price">Индивидуально</p>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="business-rates__button">
+            <span class="business-rates__button-text">Закрыть окно</span>
+          </a>
+        </div>
       </section>
 
       <section class="account">
@@ -1207,6 +1350,8 @@
               placeholder="E-mail"
             />
             <a href="#" class="account__form-button">
+              <span class="account__form-button-text">Регистрация</span>
+
               <svg
                 class="account__form-button-icon"
                 width="11"
@@ -1388,9 +1533,14 @@
             </defs>
           </svg>
           <img
-            src="../../assets/img/footer-logo-tablet.png"
+            src="../../assets/img/dark-logo-tablet.png"
             alt=""
             class="footer__tablet-logo"
+          />
+          <img
+            src="../../assets/img/dark-logo-desktop.png"
+            alt=""
+            class="footer__desktop-logo"
           />
         </a>
 

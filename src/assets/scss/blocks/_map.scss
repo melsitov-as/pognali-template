@@ -14,6 +14,13 @@
     height: 581px;
     background: url(../../assets/img/tablet-map-bg.jpg) 0 0 no-repeat;
   }
+
+  @media (min-width: global.$desktop-width) {
+    width: global.$desktop-width;
+    height: 584px;
+    margin: -121px auto 0;
+    background: url(../../assets/img/desktop-map-bg.jpg) 0 0 no-repeat;
+  }
 }
 
 .map::before {
@@ -34,5 +41,10 @@
     top: 230px;
     left: 346px;
     border: 15px solid global.$basic-white;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    top: 236px;
+    left: 635px;
   }
 }
