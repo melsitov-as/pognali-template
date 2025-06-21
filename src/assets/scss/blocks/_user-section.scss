@@ -1,0 +1,220 @@
+@use '../global.scss';
+
+.user-section {
+  position: relative;
+  z-index: 9;
+  width: 320px;
+  margin: -20px auto 0;
+  padding: 44px 0;
+  border-radius: 0 0 18px 18px;
+  background: linear-gradient(
+    to bottom,
+    global.$basic-yellow 0,
+    global.$basic-yellow 24px,
+    global.$basic-grey-2 24px,
+    global.$basic-grey-2 100%
+  );
+
+  @media (min-width: global.$tablet-width) {
+    width: global.$tablet-width;
+    background: global.$basic-grey-2;
+  }
+}
+
+.user-section__container {
+  width: 270px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 118px 63px 115px 100px;
+  grid-template-columns: 50% 50%;
+
+  @media (min-width: global.$tablet-width) {
+    width: 618px;
+  }
+}
+
+.user-section__level-circle-container {
+  position: relative;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-left: 19px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.user-section__circle-text-container {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-section__static-circle {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.user-section__circle-track {
+  fill: none;
+  stroke: none;
+  stroke-width: 8;
+}
+
+.user-section__circle-partial-border {
+  fill: none;
+  stroke: global.$special-orange;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 282.74;
+}
+
+.user-section__circle-partial-border--99 {
+  /* Для 95% заполнения: 282.74 * (1 - 0.95) = 282.74 * 0.05 = 14.137 */
+  stroke-dashoffset: 14.137;
+}
+
+.user-section__circle-partial-border--80 {
+  /* Для 80% заполнения: 282.74 * (1 - 0.80) = 282.74 * 0.20 = 56.548 */
+  stroke-dashoffset: 56.548;
+}
+
+.user-section__circle-label {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  font-size: 38px;
+  font-family: global.$bold;
+  color: global.$basic-blue;
+  border-bottom: 1px solid global.$special-grey-transparent-1;
+}
+
+.user-section__circle-level-text {
+  display: inline-block;
+  font-size: 18px;
+  font-family: global.$blogger-sans;
+  color: global.$basic-blue;
+}
+
+.user-section__user-img {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin: 0 0 0 17px;
+}
+
+.user-section__change-button {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  align-self: self-start;
+  width: 270px;
+  background: global.$special-blue-light;
+  border-radius: 18px;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: global.$medium;
+  font-size: 20px;
+  color: global.$basic-blue;
+}
+
+.user-section__tags-container {
+  width: 270px;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  border: 1px solid global.$special-grey-transparent-1;
+  border-radius: 12px;
+  align-self: self-start;
+  margin-top: 10px;
+  padding-bottom: 25px;
+}
+
+.user-section__tags-title {
+  width: 80px;
+  background: global.$basic-grey-2;
+  margin: -11px auto 15px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 16px;
+  color: global.$basic-blue-2;
+}
+
+.user-section__tags-list {
+  margin: 0 auto;
+  width: 217px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.user-section__tags-item + .user-section__tags-item {
+  margin-left: 4px;
+}
+
+.user-section__tags-item:nth-child(5n) {
+  margin-left: 0;
+}
+
+.user-section__tags-link {
+  text-decoration: none;
+  font-family: global.$blogger-sans;
+  font-style: normal;
+  font-size: 16px;
+  color: global.$special-grey-transparent-3;
+}
+
+.user-section__transport-container {
+  grid-row: 4/5;
+  grid-column: 1/3;
+  width: 270px;
+  border: 1px solid global.$special-grey-transparent-1;
+  border-radius: 12px;
+  align-self: self-start;
+  margin-top: 10px;
+  padding-bottom: 14px;
+}
+
+.user-section__transport-title {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 16px;
+  color: global.$basic-blue-2;
+  width: 110px;
+  background: global.$basic-grey-2;
+  margin: -11px auto 5px;
+  text-align: center;
+}
+
+.user-section__transport-list {
+  width: 132px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.user-section__transport-button {
+  background: global.$basic-white;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

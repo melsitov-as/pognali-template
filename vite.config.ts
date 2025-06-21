@@ -9,8 +9,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(__dirname, `${FRONT_PATH}index.html`),
-        catalog: resolve(__dirname, `${FRONT_PATH}/html/catalog/catalog.html`),
-        form: resolve(__dirname, `${FRONT_PATH}/html/form/form.html`),
+        catalog: resolve(
+          __dirname,
+          `${FRONT_PATH}/html/travellers/travellers.html`
+        ),
+        form: resolve(__dirname, `${FRONT_PATH}/html/routes/routes.html`),
       },
     },
   },

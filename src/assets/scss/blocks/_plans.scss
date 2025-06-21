@@ -1,0 +1,81 @@
+@use '../global.scss';
+
+.plans {
+  position: relative;
+  z-index: 10;
+  width: 320px;
+  margin: -38px auto 0;
+  padding: 23px 0 60px;
+  border-radius: 30px 30px 0 0;
+  background: global.$special-blue-light;
+}
+
+.plans__container {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.plans__title {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-family: global.$bold;
+  font-size: 24px;
+  font-style: normal;
+  color: global.$basic-blue-2;
+}
+
+.plans__item {
+  width: 270px;
+  padding: 21px 23px 24px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: global.$basic-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.plans__item + .plans__item {
+  margin-top: 9px;
+}
+
+.plans__item-country {
+  margin: 0 0 19px 0;
+  padding: 0;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 16px;
+  color: global.$basic-blue-2;
+}
+
+.plans__item-mates,
+.plans__item-dates {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: global.$medium;
+  font-style: normal;
+  font-size: 14px;
+  color: global.$basic-blue-2;
+}
+
+.plans__item-mates {
+  margin: 0 0 3px 4px;
+  letter-spacing: 6%;
+}
+
+.plans__item-dates {
+  margin: 0 0 21px 4px;
+  letter-spacing: 6%;
+}
+
+.plans__item-change-button {
+  display: block;
+  margin: 0 0 0 4px;
+  text-transform: uppercase;
+  font-family: global.$medium;
+  font-size: 14px;
+  font-style: normal;
+  text-decoration: none;
+  color: global.$basic-black-transparent-3;
+}

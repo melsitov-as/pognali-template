@@ -1,0 +1,129 @@
+@use '../global.scss';
+
+.header-other {
+  position: relative;
+  z-index: 10;
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 0 12px 0;
+  border-radius: 0 0 18px 18px;
+  background: global.$special-blue;
+
+  @media (min-width: global.$tablet-width) {
+    width: global.$tablet-width;
+    padding: 42px 0 64px 0;
+    border-radius: 0 0 58px 58px;
+  }
+}
+
+.header-other__container {
+  width: 268px;
+  margin: 0 auto;
+
+  @media (min-width: global.$tablet-width) {
+    width: 688px;
+  }
+}
+
+.header-other__nav-container {
+  width: 268px;
+  margin: 0 auto 49px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: global.$tablet-width) {
+    width: 688px;
+    margin: 0 auto 125px;
+  }
+}
+
+.header-other__mobile-logo {
+  @media (min-width: global.$tablet-width) {
+    display: none;
+  }
+}
+
+.header-other__tablet-logo {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+    width: 166px;
+    height: 42px;
+  }
+}
+
+.header-other__title {
+  position: relative;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 36px;
+  color: global.$basic-white;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 60px;
+    margin: 0 0 0 35px;
+  }
+}
+
+.header-other__title::after {
+  position: absolute;
+  content: '';
+  width: 214px;
+  height: 5px;
+  border-radius: 3px;
+  top: 52px;
+  left: 0;
+  background: global.$special-orange;
+
+  @media (min-width: global.$tablet-width) {
+    width: 358px;
+    height: 8px;
+    top: 131px;
+  }
+}
+
+.header-other__nav-menu-list {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+  }
+}
+
+.header-other__nav-menu-item--phone {
+  display: none;
+}
+
+.header-other__nav-menu-item--email {
+  display: none;
+}
+
+.header-other__nav-menu-item--authorization {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+  }
+}
+
+.header-other__nav-menu-link--authorization {
+  @media (min-width: global.$tablet-width) {
+    width: 188px;
+    padding: 12px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: global.$bold;
+    font-style: normal;
+    font-size: 20px;
+    color: global.$basic-blue;
+    background: global.$basic-yellow;
+  }
+}
