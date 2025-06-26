@@ -26,7 +26,7 @@ blockquote {
 
   @media (min-width: global.$tablet-width) {
     width: global.$tablet-width;
-    margin: 0 auto;
+    margin: -208px auto 0;
     padding-bottom: 89px;
     border-radius: 0 0 58px 58px;
     background: url(../../assets/img/tablet-about-bg.png) 384px 425px no-repeat,
@@ -45,6 +45,7 @@ blockquote {
     background: url(../../assets/img/desktop-about-bg-1.png) 750px -4px no-repeat,
       url(../../assets/img/desktop-about-bg-2.png) 58px -22px no-repeat,
       global.$special-blue;
+    margin: 0 auto;
     padding: 40px 0 163px;
   }
 }
@@ -184,6 +185,7 @@ blockquote {
 .about__activity-item--route {
   background: global.$special-orange;
   border-radius: 10px 10px 0 0;
+  padding: 20px 20px 42px 25px !important;
 
   @media (min-width: global.$tablet-width) {
     width: 365px;
@@ -222,9 +224,9 @@ blockquote {
 }
 
 .about__activity-item--ideas {
-  margin-top: -11px;
+  margin-top: -18px;
   background: global.$special-light-orange;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
 
   @media (min-width: global.$tablet-width) {
     width: 344px;
@@ -390,7 +392,7 @@ blockquote {
   @media (min-width: global.$tablet-width) {
     font-size: 45px;
     line-height: 45px;
-    margin: 0 0 41px 0;
+    margin: 0 0 41px 34px;
   }
 
   @media (min-width: global.$desktop-width) {
@@ -411,7 +413,7 @@ blockquote {
     font-size: 28px;
     line-height: 33px;
     width: 308px;
-    margin: 0 0 32px 0;
+    margin: 0 0 32px 34px;
   }
 
   @media (min-width: global.$desktop-width) {
@@ -420,7 +422,7 @@ blockquote {
   }
 }
 
-.about__description-addition {
+.about__description-extra {
   width: 222px;
   margin: 0 0 0 24px;
   padding: 0;

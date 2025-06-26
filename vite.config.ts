@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import { format, resolve } from 'path';
+import pugPlugin from 'vite-plugin-pug-transformer';
 
 const FRONT_PATH = 'src';
 
@@ -20,4 +21,11 @@ export default defineConfig({
   server: {
     open: 'index.html',
   },
+  plugins: [
+    pugPlugin({
+      pugOptions: {
+        pretty: true,
+      },
+    }),
+  ],
 });

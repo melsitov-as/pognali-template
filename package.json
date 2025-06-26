@@ -10,9 +10,11 @@
   },
   "devDependencies": {
     "@types/node": "^24.0.1",
+    "pug": "^3.0.3",
     "sass": "^1.89.2",
     "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-pug-transformer": "^1.0.7"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

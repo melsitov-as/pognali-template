@@ -1,0 +1,22 @@
+footer.footer     
+    .footer__container 
+        a.footer__logo-link(href="index.html")
+            include ../svg-icons/footer-logo-mobile.svg
+            img.footer__tablet-logo(src="../../assets/img/dark-logo-tablet.png", alt="Погнали") 
+            img.footer__desktop-logo(src="../../assets/img/dark-logo-desktop.png", alt="Погнали")
+            
+        ul.footer__social-list 
+            li.footer__social-item.footer__social-item--telegram 
+                a.footer__social-link(href="#")
+                    include ../svg-icons/telegram-icon.svg
+            li.footer__social-item.footer__social-item--vk
+                a.footer__social-link(href="#")
+                    include ../svg-icons/vk-icon.svg
+            li.footer__social-item.footer__social-item--whatsapp
+                a.footer__social-link(href="#")
+                    include ../svg-icons/whatsapp-icon.svg
+    
+        .footer__copyright 
+            a.footer__copyright-text-link(href="#") Разработано
+            a.footer__copyright-icon-link(href="#")
+                include ../svg-icons/ha-icon.svg  

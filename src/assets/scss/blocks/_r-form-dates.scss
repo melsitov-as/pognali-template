@@ -1,0 +1,64 @@
+@use '../global.scss';
+
+.r-form-dates {
+  background: global.$basic-white;
+  border-radius: 12px;
+  box-sizing: border-box;
+  width: 270px;
+  border: none;
+
+  //   @media (min-width: global.$tablet-width) {
+  //     width: 618px;
+  //     border-radius: 28px;
+  //   }
+
+  //   @media (min-width: global.$desktop-width) {
+  //     width: 1320px;
+  //     border-radius: 58px;
+  //   }
+}
+
+.r-form-dates__container {
+}
+
+.r-form-dates__title-container {
+  width: 220px;
+
+  //   @media (min-width: global.$desktop-width) {
+  //     width: 538px;
+  //     margin-bottom: 22px;
+  //     order: 1;
+  //   }
+
+  //   @media (min-width: global.$desktop-width) {
+  //     grid-row: 1/2;
+  //     grid-column: 1/2;
+  //     display: flex;
+  //     justify-content: flex-start;
+  //     align-items: flex-start;
+  //   }
+}
+
+.r-form-dates__title,
+.r-form-dates__title-extra {
+  margin: 0;
+  padding: 0;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  color: global.$basic-blue-2;
+
+  //   @media (min-width: global.$tablet-width) {
+  //     font-size: 36px;
+  //     line-height: 36px;
+  //   }
+}
+
+.r-form-dates__title-extra {
+  margin-bottom: 15px;
+
+  //   @media (min-width: global.$desktop-width) {
+  //     margin: 0 0 0 12px;
+  //   }
+}

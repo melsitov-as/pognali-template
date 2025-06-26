@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Мой Pug-проект с Vite
+  body.page
+  
+    include ./blocks/_header.pug
+    
+    main.main 
+        include ./blocks/_about.pug
+        include ./blocks/_routes.pug
+        include ./blocks/_users.pug
+        include ./blocks/_offers.pug
+        include ./blocks/_account.pug
+        include ./blocks/_address.pug
+        include ./blocks/_map.pug
+        
+    include ./blocks/_footer.pug
+        

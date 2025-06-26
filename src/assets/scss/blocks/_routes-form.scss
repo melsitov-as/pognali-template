@@ -1,0 +1,74 @@
+@use '../global.scss';
+
+.routes-form {
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: global.$tablet-width) {
+    width: 618px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 1320px;
+  }
+}
+
+.routes-form__buttons-submit-container {
+  @media (min-width: global.$tablet-width) {
+    order: 12;
+    width: 534px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.routes-form__submit-button {
+  width: 230px;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  background: global.$basic-yellow;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+
+  @media (min-width: global.$tablet-width) {
+    order: 1;
+    width: 286px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px 26px;
+  }
+}
+
+.routes-form__submit-button-icon {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+    margin-top: 2px;
+  }
+}
+
+.routes-form__submit-button-text {
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 17px;
+  color: global.$basic-blue-2;
+  text-transform: uppercase;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+}
+
+.routes-form__prev-step-button-submit {
+  @media (min-width: global.$tablet-width) {
+    order: 2;
+    margin-top: -6px;
+  }
+}

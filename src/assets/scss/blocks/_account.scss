@@ -177,16 +177,14 @@
   display: none;
 
   @media (min-width: global.$tablet-width) {
-    display: block;
     font-size: 24px;
-    display: inline-block;
     color: global.$basic-blue-2;
     font-family: global.$bold;
     font-style: normal;
   }
 }
 
-.account__form-button-icon {
+.account__form-button svg {
   @media (min-width: global.$tablet-width) {
     width: 14px;
     height: 16px;
@@ -220,6 +218,20 @@
   }
 }
 
+.account__contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (min-width: global.$desktop-width) {
+    flex-direction: row;
+    margin: 0 auto;
+    width: 866px;
+    justify-content: space-between;
+  }
+}
+
 .account__contacts-item {
   width: 270px;
   display: flex;
@@ -230,23 +242,9 @@
   }
 }
 
-.account__contacts-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
+.account__contacts-item + .account__contacts-item {
   @media (min-width: global.$desktop-width) {
-    flex-direction: row;
-    margin: 0 auto;
-    width: 1000px;
-    justify-content: center;
-  }
-}
-
-.account__contacts-item {
-  @media (min-width: global.$desktop-width) {
-    margin-right: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -277,33 +275,33 @@
   }
 }
 
-.account__contacts-icon {
-  display: inline-block;
-}
+.account__contacts-link svg {
+  display: block;
 
-.account__contacts-icon--phone {
   @media (min-width: global.$tablet-width) {
     width: 27px;
     height: 26px;
   }
 
   @media (min-width: global.$desktop-width) {
-    width: 36px;
-    height: 34px;
+    width: 50%;
+    height: 50%;
   }
 }
 
-.account__contacts-icon--email {
-  @media (min-width: global.$tablet-width) {
-    width: 36px;
-    height: 38px;
-  }
+// .account__contacts-link--phone svg {
+//   @media (min-width: global.$desktop-width) {
+//     width: 36px;
+//     height: 34px;
+//   }
+// }
 
-  @media (min-width: global.$desktop-width) {
-    width: 47px;
-    height: 50px;
-  }
-}
+// .account__contacts-link--email svg {
+//   @media (min-width: global.$desktop-width) {
+//     width: 37px;
+//     height: 30px;
+//   }
+// }
 
 .account__contacts-text {
   margin-left: 16px;

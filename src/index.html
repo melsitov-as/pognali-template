@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="/assets/scss/style.scss" />
     <title>Vite + TS</title>
   </head>
+
   <body class="page">
+    <script type="module" src="./main.ts"></script>
+    <template data-type="pug" data-src="./pug/index.pug"></template>
+  </body>
+
+  <!-- <body class="page">
     <header class="header">
       <div class="header__container">
         <div class="header__nav-container">
@@ -70,8 +76,10 @@
             />
             <img
               src="../../assets/img/logo-desktop.png"
-              alt="Понали"
+              alt="Погнали"
               class="header__desktop-logo"
+              width="200"
+              height="52"
             />
           </a>
 
@@ -112,12 +120,12 @@
           </a>
         </div>
 
-        <div class="header-mobile-popup-menu visually-hidden">
-          <div class="header-mobile-popup-menu__container">
-            <div class="header-mobile-popup-menu__logo-container">
-              <a href="index.html" class="header-mobile-popup-menu__logo-link">
+        <div class="header-mobile-popup visually-hidden">
+          <div class="header-mobile-popup__container">
+            <div class="header-mobile-popup__logo-container">
+              <a href="index.html" class="header-mobile-popup__logo-link">
                 <svg
-                  class="header-mobile-popup-menu__mobile-logo-icon"
+                  class="header-mobile-popup__mobile-logo-icon"
                   width="100"
                   height="15"
                   viewBox="0 0 100 15"
@@ -155,10 +163,10 @@
                 <img
                   src="../../assets/img/dark-logo-tablet.png"
                   alt=""
-                  class="header-mobile-popup-menu__tablet-logo"
+                  class="header-mobile-popup__logo-tablet"
                 />
               </a>
-              <a href="#" class="header-mobile-popup-menu__close-button">
+              <a href="#" class="header-mobile-popup__close-button">
                 <svg
                   width="19"
                   height="20"
@@ -184,40 +192,40 @@
               </a>
             </div>
 
-            <ul class="header-mobile-popup-menu__nav-list">
-              <li class="header-mobile-popup-menu__nav-item">
-                <a href="#" class="header-mobile-popup-menu__nav-link">
+            <ul class="header-mobile-popup__nav-list">
+              <li class="header-mobile-popup__nav-item">
+                <a href="#" class="header-mobile-popup__nav-link">
                   О сервисе
                 </a>
               </li>
-              <li class="header-mobile-popup-menu__nav-item">
-                <a href="#" class="header-mobile-popup-menu__nav-link">
+              <li class="header-mobile-popup__nav-item">
+                <a href="#" class="header-mobile-popup__nav-link">
                   Направления
                 </a>
               </li>
-              <li class="header-mobile-popup-menu__nav-item">
-                <a href="#" class="header-mobile-popup-menu__nav-link">
+              <li class="header-mobile-popup__nav-item">
+                <a href="#" class="header-mobile-popup__nav-link">
                   Попутчики
                 </a>
               </li>
             </ul>
 
-            <a href="#" class="header-mobile-popup-menu__auth-button">
-              <span class="header-mobile-popup-menu__auth-text"
+            <a href="#" class="header-mobile-popup__auth-button">
+              <span class="header-mobile-popup__auth-text"
                 >Авторизация</span
               >
             </a>
 
-            <ul class="header-mobile-popup-menu__contacts-list">
+            <ul class="header-mobile-popup__contacts-list">
               <li
-                class="header-mobile-popup-menu__contacts-item header-mobile-popup-menu__contacts-item--phone"
+                class="header-mobile-popup__contacts-item header-mobile-popup__contacts-item--phone"
               >
-                <a href="#" class="header-mobile-popup-menu__contacts-link">
+                <a href="#" class="header-mobile-popup__contacts-link">
                   <div
-                    class="header-mobile-popup-menu__contacts-icon-container"
+                    class="header-mobile-popup__contacts-icon-container"
                   >
                     <svg
-                      class="header-mobile-popup-menu__contacts-icon header-mobile-popup-menu__contacts-icon--phone"
+                      class="header-mobile-popup__contacts-icon header-mobile-popup__contacts-icon--phone"
                       width="19"
                       height="17"
                       viewBox="0 0 19 17"
@@ -232,21 +240,21 @@
                       />
                     </svg>
                   </div>
-                  <span class="header-mobile-popup-menu__contacts-text"
+                  <span class="header-mobile-popup__contacts-text"
                     >8 800 555-86-28</span
                   >
                 </a>
               </li>
 
               <li
-                class="header-mobile-popup-menu__contacts-item header-mobile-popup-menu__contacts-item--email"
+                class="header-mobile-popup__contacts-item header-mobile-popup__contacts-item--email"
               >
-                <a href="#" class="header-mobile-popup-menu__contacts-link">
+                <a href="#" class="header-mobile-popup__contacts-link">
                   <div
-                    class="header-mobile-popup-menu__contacts-icon-container"
+                    class="header-mobile-popup__contacts-icon-container"
                   >
                     <svg
-                      class="header-mobile-popup-menu__contacts-icon header-mobile-popup-menu__contacts-icon--email"
+                      class="header-mobile-popup__contacts-icon header-mobile-popup__contacts-icon--email"
                       width="24"
                       height="25"
                       viewBox="0 0 24 25"
@@ -261,20 +269,20 @@
                       />
                     </svg>
                   </div>
-                  <span class="header-mobile-popup-menu__contacts-text"
+                  <span class="header-mobile-popup__contacts-text"
                     >mail@htmlacademy.ru</span
                   >
                 </a>
               </li>
             </ul>
 
-            <ul class="header-mobile-popup-menu__social-list">
+            <ul class="header-mobile-popup__social-list">
               <li
-                class="header-mobile-popup-menu__social-item header-mobile-popup-menu__social-item--telegram"
+                class="header-mobile-popup__social-item header-mobile-popup__social-item--telegram"
               >
-                <a href="#" class="header-mobile-popup-menu__social-link">
+                <a href="#" class="header-mobile-popup__social-link">
                   <svg
-                    class="header-mobile-popup-menu__social-icon"
+                    class="header-mobile-popup__social-icon"
                     width="33"
                     height="22"
                     viewBox="0 0 48 48"
@@ -319,11 +327,11 @@
                 </a>
               </li>
               <li
-                class="header-mobile-popup-menu__social-item header-mobile-popup-menu__social-item--whatsapp"
+                class="header-mobile-popup__social-item header-mobile-popup__social-item--whatsapp"
               >
-                <a href="#" class="header-mobile-popup-menu__social-link">
+                <a href="#" class="header-mobile-popup__social-link">
                   <svg
-                    class="header-mobile-popup-menu__social-icon"
+                    class="header-mobile-popup__social-icon"
                     width="33"
                     height="22"
                     viewBox="0 0 48 48"
@@ -1677,5 +1685,5 @@
       </div>
     </footer>
     <script type="module" src="./main.ts"></script>
-  </body>
+  </body> -->
 </html>

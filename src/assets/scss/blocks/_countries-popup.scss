@@ -10,7 +10,21 @@
   background: global.$basic-white;
   box-shadow: 0 2px 16px 0 global.$add-plan-blue-bg-transparent;
   box-sizing: border-box;
-  //   border: 1px solid global.$border-grey-1;
+
+  @media (min-width: global.$tablet-width) {
+    width: 575px;
+    top: 2068px;
+    transform: none;
+    left: 116px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 72px,
+      global.$basic-white 72px,
+      global.$basic-white 100%
+    );
+    box-shadow: 0 8px 16px 0 global.$add-plan-blue-bg-transparent;
+  }
 }
 
 .countries-popup__title-container {
@@ -23,6 +37,13 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 5px 5px 0 0;
+
+  @media (min-width: global.$tablet-width) {
+    background: global.$basic-blue-2;
+    width: 369px;
+    margin: 0;
+    padding: 23px 26px;
+  }
 }
 
 .countries-popup__title {
@@ -34,11 +55,54 @@
   color: global.$basic-white;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+  }
+}
+
+.countries-popup__close-button {
+  @media (min-width: global.$tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.countries-popup__close-icon {
+  @media (min-width: global.$tablet-width) {
+    width: 22px;
+    height: 22px;
+    opacity: 0.3;
+  }
+}
+
+.countries-popup__content-container {
+  @media (min-width: global.$tablet-width) {
+    width: 575px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid global.$border-grey-1;
+  }
+}
+
+.countries-popup__table-container {
+  @media (min-width: global.$tablet-width) {
+    padding: 35px 30px;
+    width: 369px;
+    border-right: 1px solid global.$border-grey-1;
+    box-sizing: border-box;
+  }
 }
 
 .countries-popup__choose-table {
   width: 220px;
   border-collapse: collapse;
+
+  @media (min-width: global.$tablet-width) {
+    width: 260px;
+  }
 }
 
 .countries-popup__letter {
@@ -52,10 +116,21 @@
   text-align: center;
   box-sizing: border-box;
   border: 1px solid global.$border-grey-1;
+
+  @media (min-width: global.$tablet-width) {
+    width: 60px;
+    height: 70px;
+    font-size: 20px;
+  }
 }
 
 .countries-popup__letter--active {
   background: global.$basic-grey-2;
+
+  @media (min-width: global.$tablet-width) {
+    background: global.$basic-blue-2;
+    color: global.$basic-white;
+  }
 }
 
 .countries-popup__countries-list {
@@ -63,6 +138,11 @@
   border-top: none;
   padding: 17px 0 17px 19px;
   border-radius: 0 0 5px 5px;
+
+  @media (min-width: global.$tablet-width) {
+    border: none;
+    padding: 34px 0 17px 28px;
+  }
 }
 
 .countries-popup__country-item + .countries-popup__country-item {
@@ -76,4 +156,8 @@
   color: global.$special-grey;
   text-transform: capitalize;
   text-decoration: none;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 20px;
+  }
 }
