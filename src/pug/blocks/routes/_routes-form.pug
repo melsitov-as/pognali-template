@@ -1,0 +1,328 @@
+section.routes-form
+    .routes-form__container    
+        .routes-form__title-container 
+            h2.routes-form__title Добавить план:
+            
+            ul.routes-form__dots-list 
+                li.routes-form__dots-item.routes-form__dots-item--active 
+                li.routes-form__dots-item
+                li.routes-form__dots-item
+
+        form.routes-form__form(action="#")
+            fieldset.step-1
+                .step-1__container 
+                    .step-1__content-container 
+                        .step-1__title-container
+                            label.step-1__title Шаг 1.
+                            p.step-1__title-extra Даты пребывания
+        
+                        p.step-1__description 
+                            | Укажите предпочтительное количество попутчиков, которых
+                            | вы хотели бы позвать в поездку, и ее предполагаемую длительность.
+                
+                        ul.routes-form__steps-list
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link.routes-form__steps-link--active(href="#")
+                                    .routes-form__steps-text Даты  
+                                    
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link(href="#")
+                                    .routes-form__steps-text Маршрут 
+                                    
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link(href="#")
+                                    .routes-form__steps-text Развлечения 
+                        
+                    .step-1__inputs-container
+                        label.step-1__mates-label(for="mates")
+                            span.step-1__mates-text Ищу попутчиков:
+                            span.step-1__mates-text-extra Чел. 
+                            .step-1__mates-input-container 
+                                button.step-1__mates-minus-button 
+                                    include ../../svg-icons/minus-icon.svg
+                                input.step-1__mates-input(type="text", name="mates", id="mates", placeholder="2")
+                                button.step-1__mates-plus-button 
+                                    include ../../svg-icons/plus-icon.svg
+                                        
+                        label.step-1__duration-label(for="duration")
+                            span.step-1__duration-text Длительность:
+                            span.step-1__duration-text-extra Дн. 
+                            .step-1__duration-input-container 
+                                button.step-1__duration-minus-button
+                                        include ../../svg-icons/minus-icon.svg
+                                input.step-1__duration-input(type="text", name="duration", id="duration", placeholder="2")
+                                button.step-1__duration-plus-button
+                                        include ../../svg-icons/plus-icon.svg
+                                        
+                        label.step-1__children-label(for="children")
+                            input.step-1__children-input.visually-hidden(type="checkbox", name="children", id="children")
+                            .step-1__children-custom-input 
+                            span.step-1__children-text Можно с детьми    
+                                
+                    .step-1-calendar
+                        .step-1-calendar__menu 
+                            button.step-1-calendar__menu-prev-button 
+                                include ../../svg-icons/next-icon.svg  
+                            p.step-1-calendar__menu-month-title 
+                                | Март 2019
+                            button.step-1-calendar__menu-next-button 
+                                include ../../svg-icons/next-icon.svg  
+                        
+                        .step-1-calendar__table-container 
+                            table.step-1-calendar__table 
+                                thead 
+                                        tr 
+                                            td.step-1-calendar__table-day-name 
+                                                span.step-1-calendar__table-day-name-text  П
+                                                span.step-1-calendar__table-day-name-text-tablet  Пн
+                                            td.step-1-calendar__table-day-name 
+                                                span.step-1-calendar__table-day-name-text  В
+                                                span.step-1-calendar__table-day-name-text-tablet  Вт
+                                            td.step-1-calendar__table-day-name 
+                                                span.step-1-calendar__table-day-name-text  С
+                                                span.step-1-calendar__table-day-name-text-tablet  Ср
+                                            td.step-1-calendar__table-day-name 
+                                                span.step-1-calendar__table-day-name-text  Ч
+                                                span.step-1-calendar__table-day-name-text-tablet  Чт
+                                            td.step-1-calendar__table-day-name 
+                                                span.step-1-calendar__table-day-name-text  П
+                                                span.step-1-calendar__table-day-name-text-tablet  Пт
+                                            td.step-1-calendar__table-day-name 
+                                                span.step-1-calendar__table-day-name-text.step-1-calendar__table-day-name-text--weekend С
+                                                span.step-1-calendar__table-day-name-text-tablet.step-1-calendar__table-day-name-text-tablet--weekend Сб
+                                            td.step-1-calendar__table-day-name 
+                                                span.step-1-calendar__table-day-name-text.step-1-calendar__table-day-name-text--weekend В
+                                                span.step-1-calendar__table-day-name-text-tablet.step-1-calendar__table-day-name-text-tablet--weekend Вт
+                                tbody 
+                                        tr 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 23
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 24
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 25
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 26
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 27
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 28
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired    
+                                                span.step-1-calendar__table-day-number-text 1 мар
+                                        tr 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 2
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 3
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 4
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 5
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 6
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 7
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 8
+                                        tr 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 9
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 10
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 11
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 12
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 13
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 14
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 15
+                                        tr 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired
+                                                span.step-1-calendar__table-day-number-text 16
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 17
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 18
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 19
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 20
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 21
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 22
+                                        tr 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 23
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 24
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
+                                                span.step-1-calendar__table-day-number-text 25
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--current.step-1-calendar__table-day-number--choosen
+                                                span.step-1-calendar__table-day-number-text 26 <br class="step-1-calendar__table-br-desktop"> Заезд
+                                                //- span.step-1-calendar__table-day-number-text-case Заезд 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--choosen 
+                                                span.step-1-calendar__table-day-number-text 27
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--choosen 
+                                                span.step-1-calendar__table-day-number-text 28 <br class="step-1-calendar__table-br-desktop"> Выезд
+                                                //- span.step-1-calendar__table-day-number-text-case Выезд 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future 
+                                                span.step-1-calendar__table-day-number-text 29
+                                        tr 
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future 
+                                                span.step-1-calendar__table-day-number-text 30
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future 
+                                                span.step-1-calendar__table-day-number-text 31
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future
+                                                span.step-1-calendar__table-day-number-text 1 апр
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future
+                                                span.step-1-calendar__table-day-number-text 2
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future
+                                                span.step-1-calendar__table-day-number-text 3
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future
+                                                span.step-1-calendar__table-day-number-text 4
+                                            td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future
+                                                span.step-1-calendar__table-day-number-text 5
+                                        
+                    a.step-1__next-step-button(href="#")
+                        span.step-1__next-step-text Следующий шаг 
+                        include ../../svg-icons/button-triangle-icon.svg
+            
+            fieldset.step-2
+                .step-2__container 
+                    .step-2__content-container 
+                        .step-2__title-container
+                            label.step-2__title Шаг 2.
+                            p.step-2__title-extra Маршрут
+        
+                        p.step-2__description 
+                            | Укажите страны, которые вы хотели бы посетить. <br class="step-2__description-br-tablet">
+                            | Это может быть одна или сразу несколько.
+                
+                        ul.routes-form__steps-list
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link(href="#")
+                                    .routes-form__steps-dot 
+                                    .routes-form__steps-text Даты  
+                                    
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link.routes-form__steps-link--active(href="#")
+                                    .routes-form__steps-dot 
+                                    .routes-form__steps-text Маршрут 
+                                    
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link(href="#")
+                                    .routes-form__steps-dot 
+                                    .routes-form__steps-text Развлечения 
+                                
+                    .step-2__country-container
+                        .step-2__country-dot
+                        .step-2__country-text-container.step-2__country-text-container--1
+                            span.step-2__country-text.step-2__country-text--long Босния и Герцеговина
+                            button.step-2__country-open-button 
+                                include ../../svg-icons/open-arrow-icon.svg
+                                
+                        .step-2__country-flag-container
+                            img.step-2__country-flag(src="../../assets/img/bosn-herz-flag.png", alt="Босния и Герцеговина", width="35", height="24")
+                            
+                        .step-2__country-delete-button       
+                            img.step-2__country-delete-img(src="../../assets/img/small-close-icon.png", alt="Удалить", width="9", height="9")
+                            include ../../svg-icons/close-icon.svg
+                            
+                    .step-2__country-container
+                        .step-2__country-dot
+                        .step-2__country-text-container.step-2__country-text-container--2
+                            span.step-2__country-text Чехия
+                            button.step-2__country-open-button 
+                                include ../../svg-icons/open-arrow-icon.svg
+                                
+                        .step-2__country-flag-container
+                            img.step-2__country-flag(src="../../assets/img/czech-flag.png", alt="Чехия", width="35", height="24")
+                            
+                        .step-2__country-delete-button  
+                            img.step-2__country-delete-img(src="../../assets/img/small-close-icon.png", alt="Удалить", width="9", height="9")
+                            include ../../svg-icons/close-icon.svg
+                            
+                    .step-2__choose-country-container
+                        .step-2__choose-country-dot
+                        .step-2__choose-country-text-container
+                            span.step-2__choose-country-text Выберите страну
+                        button.step-2__choose-country-open-button 
+                            include ../../svg-icons/open-arrow-icon.svg
+                                
+                        .step-2__choose-country-delete-button  
+                            img.step-2__country-delete-img(src="../../assets/img/small-close-icon.png", alt="Удалить", width="9", height="9")
+                            include ../../svg-icons/close-icon.svg
+                            
+                    .step-2__add-country-container
+                        .step-2__add-country-dot
+                        .step-2__add-country-text-container
+                            span.step-2__add-country-text Добавить страну
+                        button.step-2__add-country-button 
+                            include ../../svg-icons/plus-icon.svg
+                            
+                    .step-2__buttons-container 
+                        a.step-2__next-step-button(href="#")
+                            span.step-2__next-step-text Следующий шаг 
+                            include ../../svg-icons/button-triangle-icon.svg
+    
+                        a.step-2__prev-step-button(href="#")
+                            include ../../svg-icons/button-triangle-icon.svg
+                            span.step-2__prev-step-text На шаг назад 
+                            
+            fieldset.step-3
+                .step-3__container 
+                    .step-3__content-container 
+                        .step-3__title-container
+                            label.step-3__title Шаг 3.
+                            p.step-3__title-extra Развлечения
+        
+                        p.step-3__description 
+                            | Наконец, расскажите о своих планах времяпровождения. <br class="step-3__description-br-tablet">
+                            | Можно писать в свободной форме и ставить тэги.
+                
+                        ul.routes-form__steps-list
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link(href="#")
+                                    .routes-form__steps-dot 
+                                    .routes-form__steps-text Даты  
+                                    
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link(href="#")
+                                    .routes-form__steps-dot 
+                                    .routes-form__steps-text Маршрут 
+                                    
+                            li.routes-form__steps-item 
+                                a.routes-form__steps-link.routes-form__steps-link--active(href="#")
+                                    .routes-form__steps-dot 
+                                    .routes-form__steps-text Развлечения 
+                                    
+                    .step__countries-lines
+                           
+                    .step-3__country-container.step-3__country-container--1
+                        .step-3__country-title-container 
+                            p.step-3__country-title Босния и Герцеговина
+                            div.step-3__country-flag-img-container
+                                img.step-3__country-flag-img(src="../../assets/img/bosn-herz-flag.png", alt="Босния и Герцеговина", width="35", height="24")
+                                
+                        textarea.step-3__country-textarea.step-3__country-textarea--1(name="country-1", placeholder="План действий")
+                            
+                    .step-3__country-container.step-3__country-container--2
+                        .step-3__country-title-container 
+                            p.step-3__country-title Чехия
+                            div.step-3__country-flag-img-container
+                                img.step-3__country-flag-img(src="../../assets/img/czech-flag.png", alt="Чехия", width="35", height="24")
+                                
+                        textarea.step-3__country-textarea.step-3__country-textarea--2(name="country-2") Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                        
+                .step-3__buttons-container 
+                    button.step-3__submit-button(type="submit")
+                        span.step-3__submit-text Отправить
+                        include ../../svg-icons/button-triangle-icon.svg
+    
+                    a.step-3__prev-step-button(href="#")
+                        include ../../svg-icons/button-triangle-icon.svg
+                        span.step-3__prev-step-text На шаг назад 

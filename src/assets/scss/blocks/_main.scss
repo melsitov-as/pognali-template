@@ -10,5 +10,24 @@
 
   @media (min-width: global.$desktop-width) {
     width: global.$desktop-width;
+    background: global.$basic-grey-2;
+  }
+}
+
+.main__catalog-content-container {
+  padding-bottom: 156px;
+  background: global.$basic-grey-2;
+
+  @media (min-width: global.$tablet-width) {
+    padding-bottom: 131px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 152px;
+    padding-bottom: 142px;
+    display: flex;
+    justify-content: flex-start;
   }
 }

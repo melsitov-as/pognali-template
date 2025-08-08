@@ -97,6 +97,15 @@
   }
 }
 
+.account__auth-link:hover {
+  color: global.$special-dark-yellow;
+}
+
+.account__auth-link:active {
+  color: global.$special-dark-yellow;
+  opacity: 0.3;
+}
+
 .account__form {
   width: 270px;
   margin: 0 auto 26px;
@@ -182,6 +191,10 @@
     font-family: global.$bold;
     font-style: normal;
   }
+
+  @media (min-width: global.$desktop-width) {
+    display: block;
+  }
 }
 
 .account__form-button svg {
@@ -190,6 +203,19 @@
     height: 16px;
     viewbox: '0 0 14 16';
   }
+}
+
+.account__form-button:hover {
+  background: global.$special-dark-yellow;
+}
+
+.account__form-button:active {
+  background: global.$special-dark-yellow;
+}
+
+.account__form-button:active span,
+.account__form-button:active svg {
+  opacity: 0.3;
 }
 
 .account__questions {
@@ -316,4 +342,22 @@
     font-size: 28px;
     margin-left: 24px;
   }
+}
+
+.account__contacts-link:hover .account__contacts-text {
+  color: global.$special-dark-yellow;
+}
+
+.account__contacts-link:hover svg path {
+  fill: global.$special-dark-yellow;
+}
+
+.account__contacts-link:active .account__contacts-text {
+  color: global.$special-dark-yellow;
+  opacity: 0.3;
+}
+
+.account__contacts-link:active svg path {
+  fill: global.$special-dark-yellow;
+  opacity: 0.3;
 }

@@ -1,0 +1,37 @@
+.header-catalog     
+    .header-catalog__container 
+        .header-catalog__nav-container 
+            a.header-catalog__logo-link(href="index.html")
+                include ../../svg-icons/logo-mobile.svg  
+                img.header-catalog__tablet-logo(src="../../../assets/img/logo-tablet.png", alt="Погнали", width="166", height="42") 
+                img.header-catalog__desktop-logo(src="../../assets/img/logo-desktop.png", alt="Погнали", width="200", height="52")
+                
+            a.header-catalog__open-button(href="#")  
+                include ../../svg-icons/hamburger-icon.svg  
+                
+            ul.header-catalog__site-nav-list
+                li.header-catalog__site-nav-item 
+                    a.header-catalog__site-nav-link(href="index.html")  О сервисе
+                li.header-catalog__site-nav-item 
+                    a.header-catalog__site-nav-link(href="../../html/routes/routes.html")  Направления
+                li.header-catalog__site-nav-item 
+                    a.header-catalog__site-nav-link(href="../../html/catalog/catalog.html") Попутчики
+                     
+            ul.header-catalog__nav-menu-list
+                li.header-catalog__nav-menu-item.header-catalog__nav-menu-item--phone 
+                    a.header-catalog__nav-link.header-catalog__nav-link--phone(href="#")
+                        include ../../svg-icons/call-icon.svg
+                li.header-catalog__nav-menu-item.header-catalog__nav-menu-item--email       
+                    a.header-catalog__nav-link.header-catalog__nav-link--email(href="#")
+                        include ../../svg-icons/mail-icon.svg  
+                li.header-catalog__nav-menu-item.header-catalog__nav-menu-item--authorization 
+                    a.header-catalog__nav-menu-link.header-catalog__nav-menu-link--authorization Авторизация
+                    
+        .header-catalog__title-content-container 
+            h1.header-catalog__title Попутчики
+            
+            a.header-catalog__title-return-button-container
+                span.header-catalog__return-text На главную
+                include ../../svg-icons/catalog-return-icon.svg 
+                
+            

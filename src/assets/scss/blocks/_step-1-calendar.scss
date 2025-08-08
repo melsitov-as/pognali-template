@@ -1,0 +1,257 @@
+@use '../global.scss';
+
+.step-1-calendar {
+  margin-bottom: 22px;
+
+  @media (min-width: global.$tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    margin-bottom: 62px;
+  }
+}
+
+.step-1-calendar__menu {
+  width: 220px;
+  margin: 0 auto 12px;
+  padding: 8px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid global.$border-grey-1;
+  border-bottom: 1px solid global.$border-grey-1;
+
+  @media (min-width: global.$tablet-width) {
+    margin-bottom: 28px;
+    padding: 22px 0;
+    width: 538px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 1016px;
+    margin-bottom: 0;
+  }
+}
+
+.step-1-calendar__menu-next-button,
+.step-1-calendar__menu-prev-button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: global.$tablet-width) {
+    width: 46px;
+    height: 36px;
+  }
+}
+
+.step-1-calendar__menu-prev-button svg {
+  transform: rotate(180deg);
+}
+
+.step-1-calendar__menu-next-button svg,
+.step-1-calendar__menu-prev-button svg {
+  width: 28px;
+  height: 28px;
+
+  @media (min-width: global.$tablet-width) {
+    width: 30px;
+    height: 36px;
+  }
+}
+
+.step-1-calendar__menu-month-title {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  font-family: global.$bold;
+  font-style: normal;
+  font-size: 20px;
+  color: global.$basic-blue-2;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.step-1-calendar__table {
+  width: 220px;
+  border-collapse: collapse;
+
+  @media (min-width: global.$tablet-width) {
+    width: 538px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 1016px;
+  }
+}
+
+.step-1-calendar__table-day-name {
+  width: 28px;
+  height: 31px;
+
+  @media (min-width: global.$tablet-width) {
+    width: 76px;
+    height: 36px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 142px;
+    height: 53px;
+  }
+}
+
+.step-1-calendar__table-day-name-text {
+  display: inline-block;
+  text-align: center;
+  width: 28px;
+  font-family: global.$blogger-sans;
+  font-style: normal;
+  font-size: 14px;
+  color: global.$special-grey;
+
+  @media (min-width: global.$tablet-width) {
+    display: none;
+  }
+}
+
+.step-1-calendar__table-day-name-text-tablet {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: inline-block;
+    text-align: center;
+    width: 74px;
+    margin-left: 25px;
+    font-family: global.$blogger-sans;
+    font-style: normal;
+    font-size: 18px;
+    color: global.$special-grey;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 20px;
+  }
+}
+
+.step-1-calendar__table-day-name-text-tablet--weekend,
+.step-1-calendar__table-day-name-text--weekend {
+  color: global.$special-red;
+}
+
+.step-1-calendar__table-day-number {
+  width: 28px;
+  height: 31px;
+  border: 1px solid global.$border-grey-1;
+  box-sizing: border-box;
+
+  @media (min-width: global.$tablet-width) {
+    width: 76px;
+    height: 69px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    vertical-align: top;
+    width: 142px;
+    height: 70px;
+  }
+}
+
+.step-1-calendar__table-day-number-text {
+  display: block;
+  text-align: center;
+  font-family: global.$blogger-sans;
+  font-style: normal;
+  font-size: 14px;
+
+  @media (min-width: global.$tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 50px;
+    margin-top: 12px;
+    margin-left: 22px;
+    text-align: left;
+  }
+}
+
+// .step-1-calendar__table-day-number-text-case {
+//   display: none;
+
+//   @media (min-width: global.$desktop-width) {
+//     display: block;
+//     text-align: center;
+//     font-family: global.$blogger-sans;
+//     font-style: normal;
+//     font-size: 18px;
+//     margin-top: 22px;
+//     margin-left: -12px;
+//   }
+// }
+
+.step-1-calendar__table-day-number--future
+  .step-1-calendar__table-day-number-text {
+  @media (min-width: global.$tablet-width) {
+    font-family: global.$medium !important;
+  }
+}
+
+.step-1-calendar__table-day-number--choosen {
+  background: global.$basic-blue-2;
+}
+
+.step-1-calendar__table-day-number--current {
+  position: relative;
+}
+
+.step-1-calendar__table-day-number--current::before {
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 2px solid global.$special-red;
+  top: -1px;
+  left: 0;
+
+  @media (min-width: global.$tablet-width) {
+    width: 78px;
+    height: 70px;
+    border: 4px solid global.$special-red;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    width: 146px;
+    height: 70px;
+  }
+}
+
+.step-1-calendar__table-day-number--future {
+  background: global.$basic-grey-2;
+}
+
+.step-1-calendar__table-day-number--expired
+  .step-1-calendar__table-day-number-text {
+  color: global.$border-grey-1;
+}
+
+.step-1-calendar__table-day-number--choosen
+  .step-1-calendar__table-day-number-text,
+.step-1-calendar__table-day-number--choosen
+  .step-1-calendar__table-day-number-text-case {
+  color: global.$basic-white;
+}
+
+.step-1-calendar__table-day-number--future
+  .step-1-calendar__table-day-number-text {
+  color: global.$basic-blue-2;
+}

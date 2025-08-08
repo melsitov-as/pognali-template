@@ -256,6 +256,14 @@
   }
 }
 
+.users__item-tag-link:hover {
+  opacity: 0.7;
+}
+
+.users__item-tag-link:active {
+  opacity: 0.3;
+}
+
 .users__item-transport-list {
   display: flex;
   justify-content: center;
@@ -264,6 +272,14 @@
 
 .users__item-transport-item + .users__item-transport-item {
   margin-left: 11px;
+}
+
+.users__item-transport-item:hover svg {
+  opacity: 0.7;
+}
+
+.users__item-transport-item:active svg {
+  opacity: 0.3;
 }
 
 .users__button {
@@ -292,6 +308,19 @@
     margin: 7px 0 0 70px;
     padding: 24px 35px 28px 30px;
   }
+}
+
+.users__button:hover {
+  background: global.$special-dark-yellow;
+}
+
+.users__button:active {
+  background: global.$special-dark-yellow;
+}
+
+.users__button:active span,
+.users__button:active svg {
+  opacity: 0.3;
 }
 
 .users__button svg {

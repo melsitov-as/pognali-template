@@ -331,6 +331,19 @@
   }
 }
 
+.routes__button:hover {
+  background: global.$special-dark-yellow;
+}
+
+.routes__button:active {
+  background: global.$special-dark-yellow;
+}
+
+.routes__button:active span,
+.routes__button:active svg {
+  opacity: 0.3;
+}
+
 .routes__button svg {
   margin-top: 5px;
 

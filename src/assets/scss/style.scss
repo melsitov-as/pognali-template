@@ -14,10 +14,21 @@
 @use 'blocks/_header-mobile-popup';
 @use 'blocks/_header-scroll-menu';
 @use 'blocks/_business-rates';
-@use 'blocks/_header-other';
+
+@use 'blocks/_header-routes';
 @use 'blocks/_user-section';
 @use 'blocks/_plans';
 @use 'blocks/_add-plan';
 @use 'blocks/_countries-popup';
 @use 'blocks/_routes-form';
-@use 'blocks/_r-form-dates';
+@use 'blocks/_step-1';
+@use 'blocks/_step-1-calendar';
+@use 'blocks/_step-2';
+@use 'blocks/_step-3';
+
+@use 'blocks/catalog/_header-catalog';
+@use 'blocks/catalog/_filter-countries';
+@use 'blocks/catalog/_filter-travellers';
+@use 'blocks/catalog/_travellers';
+@use 'blocks/catalog/_traveller';
+@use 'blocks/catalog/_countries-popup-desktop';

@@ -1,0 +1,50 @@
+section.user-section 
+    .user-section__container 
+        h2.visually-hidden Данные пользователя
+        .user-section__level-circle-container
+            svg.user-section__static-circle(viewBox="0 0 100 100")
+                circle.user-section__circle-track(cx="50" cy="50" r="45")
+                circle.user-section__circle-partial-border.user-section__circle-partial-border--80(cx="50" cy="50" r="47")
+            .user-section__circle-text-container
+                span.user-section__circle-label 80
+                span.user-section__circle-level-text level
+                
+        img.user-section__user-img-mobile(src="../../assets/img/user-section-user-photo-mobile.png", alt="Фото пользователя", width="100", height="100")
+        
+        img.user-section__user-img-tablet(src="../../assets/img/user-section-user-photo-tablet.png", alt="Фото пользователя", width="94", height="94")
+        
+        a.user-section__change-button(href="#")
+            span.user-section__change-text Сменить
+            span.user-section__photo-text фото 
+        
+        .user-section__tags-container   
+            h3.user-section__tags-title Тэги    
+            ul.user-section__tags-list 
+                li.user-section__tags-item  
+                    a.user-section__tags-link(href="#") #бургер
+                li.user-section__tags-item 
+                    a.user-section__tags-link(href="#") #бар
+                li.user-section__tags-item 
+                    a.user-section__tags-link(href="#") #футбол
+                li.user-section__tags-item 
+                    a.user-section__tags-link(href="#") #концерт
+                li.user-section__tags-item 
+                    a.user-section__tags-link(href="#") #крафт
+        
+         
+        .user-section__transport-container 
+            h3.user-section__transport-title Транспорт    
+        
+            ul.user-section__transport-list  
+                li.user-section__transport-item 
+                    a.user-section__transport-button(href="#") 
+                        include ../../svg-icons/plane-icon.svg
+                li.user-section__transport-item 
+                    a.user-section__transport-button(href="#") 
+                        include ../../svg-icons/bus-icon.svg
+                li.user-section__transport-item 
+                    a.user-section__transport-button(href="#") 
+                        include ../../svg-icons/bicycle-icon.svg
+                li.user-section__transport-item 
+                    a.user-section__transport-button(href="#") 
+                        include ../../svg-icons/run-icon.svg                        

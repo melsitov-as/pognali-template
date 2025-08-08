@@ -466,6 +466,19 @@ blockquote {
   }
 }
 
+.about__button:hover {
+  background: global.$special-dark-yellow;
+}
+
+.about__button:active {
+  background: global.$special-dark-yellow;
+}
+
+.about__button:active span,
+.about__button:active svg {
+  opacity: 0.3;
+}
+
 .about__button-icon {
   @media (min-width: global.$tablet-width) {
     margin-top: 5px;

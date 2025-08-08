@@ -1,0 +1,45 @@
+section.filter-countries   
+    .filter-countries__container
+        h2.visually-hidden Фильтр по странам
+        .filter-countries__content-container-mobile
+            include ../../svg-icons/icon-filter-mobile.svg 
+            p.filter-countries__filter-title Фильтрация по странам:
+            a.filter-countries__open-button(href="#")
+                include ../../svg-icons/icon-dots-mobile.svg 
+                
+            //- include ./_countries-popup-mobile.pug
+        
+        .filter-countries__content-container-tablet
+            .filter-countries__mobile-filter-list 
+                .filter-countries__mobile-filter-item 
+                    a.filter-countries__mobile-filter-item-link.filter-countries__mobile-filter-item-link--active Европа
+                .filter-countries__mobile-filter-item 
+                    a.filter-countries__mobile-filter-item-link Азия
+                .filter-countries__mobile-filter-item 
+                    a.filter-countries__mobile-filter-item-link Америка
+                .filter-countries__mobile-filter-item 
+                    a.filter-countries__mobile-filter-item-link Острова
+                    
+            a.filter-countries__filter-show-button 
+                span.filter-countries__show-text Показать все
+                include ../../svg-icons/icon-dots-mobile.svg 
+            
+        .filter-countries__content-container-desktop
+            .filter-countries__desktop-filter-title-container 
+                include ../../svg-icons/catalog-desktop-filter-icon.svg
+                span.filter-countries__desktop-filter-text Фильтрация по странам:
+            
+            .filter-countries__desktop-filter-list 
+                .filter-countries__desktop-filter-item 
+                    a.filter-countries__desktop-filter-item-link.filter-countries__desktop-filter-item-link--active Европа
+                .filter-countries__desktop-filter-item 
+                    a.filter-countries__desktop-filter-item-link Азия
+                .filter-countries__desktop-filter-item 
+                    a.filter-countries__desktop-filter-item-link Америка
+                .filter-countries__desktop-filter-item 
+                    a.filter-countries__desktop-filter-item-link Острова
+                    
+include ./_countries-popup-desktop.pug
+                
+    
+            
