@@ -1,5 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
 import pugPlugin from 'vite-plugin-pug-transformer';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { format, resolve } from 'path';
 
 export default defineConfig(({ mode }) => {
@@ -42,6 +43,14 @@ export default defineConfig(({ mode }) => {
           //   prefix: prefix,
           // },
         },
+      }),
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'assets/img/**/*.*', // Путь к исходным файлам
+            dest: 'assets/img', // Куда их скопировать в папке сборки
+          },
+        ],
       }),
     ],
     base: '/pognali-template/',
