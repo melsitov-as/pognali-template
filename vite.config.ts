@@ -16,6 +16,19 @@ export default defineConfig(({ mode }) => {
           catalog: resolve(__dirname, `${FRONT_PATH}/catalog.html`),
           routes: resolve(__dirname, `${FRONT_PATH}/routes.html`),
         },
+        output: {
+          assetFileNames: (assetInfo) => {
+            // Проверяем, что имя файла существует и является строкой
+            if (
+              assetInfo.name &&
+              /\.(png|jpe?g|svg|gif|tiff|bmp|ico)$/i.test(assetInfo.name)
+            ) {
+              return `assets/img/[name].[ext]`;
+            }
+            // Если имя файла отсутствует, возвращаем стандартный шаблон или другой путь по умолчанию
+            return `assets/[name]-[hash].[ext]`;
+          },
+        },
       },
     },
     server: {
@@ -25,9 +38,9 @@ export default defineConfig(({ mode }) => {
       pugPlugin({
         pugOptions: {
           pretty: true, // Для форматирования HTML-кода
-          locals: {
-            prefix: prefix,
-          },
+          // locals: {
+          //   prefix: prefix,
+          // },
         },
       }),
     ],
