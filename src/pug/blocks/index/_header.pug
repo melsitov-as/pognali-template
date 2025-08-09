@@ -2,20 +2,20 @@ header.header
     .header__container 
         .header__nav-container 
             a.header__logo-link(href="index.html")  
-                include ../../../assets/svg-icons/logo-mobile.svg       
-                img.header__tablet-logo(src="../../../assets/img/logo-tablet.png", alt="Погнали", width="166", height="42") 
-                img.header__desktop-logo(src="../../../assets/img/logo-desktop.png", alt="Погнали", width="200", height="52") 
+                include /pognali-template/src/assets/svg-icons/logo-mobile.svg       
+                img.header__tablet-logo(src="/pognali-template/src/assets/img/logo-tablet.png", alt="Погнали", width="166", height="42") 
+                img.header__desktop-logo(src="/pognali-template/src/assets/img/logo-desktop.png", alt="Погнали", width="200", height="52") 
             
             ul.header__site-nav-list 
                 li.header__site-nav-item 
                     a.header__site-nav-link(href="index.html") О сервисе   
                 li.header__site-nav-item 
-                    a.header__site-nav-link(href="../../../html/routes/routes.html") Направления
+                    a.header__site-nav-link(href="/pognali-template/src/html/routes/routes.html") Направления
                 li.header__site-nav-item 
-                    a.header__site-nav-link(href="../../../html/catalog/catalog.html") Попутчики 
+                    a.header__site-nav-link(href="/pognali-template/src/html/catalog/catalog.html") Попутчики 
                     
             a.header__nav-menu-open-button(href="#")  
-                include ../../../assets/svg-icons/hamburger-icon.svg
+                include /pognali-template/src/assets/svg-icons/hamburger-icon.svg
                 
         include ./_header-mobile-popup.pug
         
@@ -26,10 +26,10 @@ header.header
         ul.header__nav-list
             li.header__nav-item 
                 a.header__nav-link.header__nav-link--phone(href="#")
-                    include ../../../assets/svg-icons/call-icon.svg
+                    include /pognali-template/src/assets/svg-icons/call-icon.svg
             li.header__nav-item 
                 a.header__nav-link.header__nav-link--email(href="#")
-                    include ../../../assets/svg-icons/mail-icon.svg  
+                    include /pognali-template/src/assets/svg-icons/mail-icon.svg  
             li.header__nav-item 
                 a.header__nav-link.header__nav-link--authorization(href="#") 
                     span.header__nav-link-auth-text Авторизация
@@ -46,23 +46,23 @@ header.header
                 
         .header__bottom-nav-container 
             a.header__bottom-logo-link(href="index.html")
-                img.header__bottom-desktop-logo(src="../../../assets/img/dark-logo-desktop.png", alt="Погнали") 
+                img.header__bottom-desktop-logo(src="/pognali-template/src/assets/img/dark-logo-desktop.png", alt="Погнали") 
                 
             ul.header__bottom-site-nav-list 
                 li.header__bottom-site-nav-item 
-                    a.header__bottom-site-nav-link(href="index.html") О сервисе   
+                    a.header__bottom-site-nav-link(href="/pognali-template/index.html") О сервисе   
                 li.header__bottom-site-nav-item 
-                    a.header__bottom-site-nav-link(href="../../../html/routes/routes.html") Направления
+                    a.header__bottom-site-nav-link(href="/pognali-template/routes.html") Направления
                 li.header__bottom-site-nav-item 
-                    a.header__bottom-site-nav-link(href="../../../html/travellers/travellers.html") Попутчики    
+                    a.header__bottom-site-nav-link(href="/pognali-template/travellers.html") Попутчики    
                 
             ul.header__bottom-nav-list
                 li.header__bottom-nav-item 
                     a.header__bottom-nav-link.header__bottom-nav-link--phone(href="#")
-                        include ../../../assets/svg-icons/call-icon.svg
+                        include /pognali-template/src/assets/svg-icons/call-icon.svg
                 li.header__bottom-nav-item 
                     a.header__bottom-nav-link.header__bottom-nav-link--email(href="#")
-                        include ../../../assets/svg-icons/mail-icon.svg  
+                        include /pognali-template/src/assets/svg-icons/mail-icon.svg  
                 li.header__bottom-nav-item 
                     a.header__bottom-nav-link.header__bottom-nav-link--authorization(href="#") 
                         span.header__nav-link-auth-text Авторизация
