@@ -53,6 +53,14 @@
   }
 }
 
+.header-catalog__logo-link:hover {
+  opacity: 0.7;
+}
+
+.header-catalog__logo-link:active {
+  opacity: 0.3;
+}
+
 .header-catalog__logo-link svg {
   @media (min-width: global.$tablet-width) {
     display: none;
@@ -132,6 +140,15 @@
   }
 }
 
+.header-catalog__site-nav-link:hover {
+  color: global.$basic-yellow;
+}
+
+.header-catalog__site-nav-link:active {
+  color: global.$basic-yellow;
+  opacity: 0.2;
+}
+
 .header-catalog__nav-menu-list {
   display: none;
 
@@ -152,6 +169,14 @@
   display: none;
 
   @media (min-width: global.$desktop-width) {
+    display: block;
+  }
+}
+
+.header-catalog__nav-link--phone {
+  display: none;
+
+  @media (min-width: global.$desktop-width) {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -162,7 +187,47 @@
   }
 }
 
+.header-catalog__nav-link--phone:hover {
+  background: global.$special-dark-orange;
+}
+
+.header-catalog__nav-link--phone:active {
+  background: global.$special-dark-orange;
+}
+
+.header-catalog__nav-link:active svg {
+  opacity: 0.3;
+}
+
+.header-catalog__nav-link:active span {
+  opacity: 0.3;
+}
+
+.header-catalog__nav-link--email:hover {
+  background: global.$special-orange;
+}
+
+.header-catalog__nav-link--email:active {
+  background: global.$special-orange;
+}
+
+.header-catalog__nav-link--authorization:hover {
+  background: global.$special-dark-yellow;
+}
+
+.header-catalog__nav-link--authorization:active {
+  background: global.$special-dark-yellow;
+}
+
 .header-catalog__nav-menu-item--email {
+  display: none;
+
+  @media (min-width: global.$desktop-width) {
+    display: block;
+  }
+}
+
+.header-catalog__nav-link--email {
   display: none;
 
   @media (min-width: global.$desktop-width) {
@@ -184,7 +249,7 @@
   }
 }
 
-.header-catalog__nav-menu-link--authorization {
+.header-catalog__nav-link--authorization {
   @media (min-width: global.$tablet-width) {
     width: 188px;
     padding: 12px 0;
@@ -262,6 +327,14 @@
     margin-left: 162px;
     text-decoration: none;
   }
+}
+
+.header-catalog__title-return-button-container:hover {
+  opacity: 0.7;
+}
+
+.header-catalog__title-return-button-container:active {
+  opacity: 0.3;
 }
 
 .header-catalog__return-text {

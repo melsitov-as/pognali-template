@@ -220,6 +220,7 @@
   align-items: center;
   margin-top: 1px;
   margin-bottom: 1px;
+  text-decoration: none;
 
   @media (min-width: global.$tablet-width) {
     width: 104px;
@@ -241,6 +242,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+  text-decoration: none;
 }
 
 .filter-travellers__fieldset-level-title-container {
@@ -248,11 +250,24 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  text-decoration: none;
 
   @media (min-width: global.$desktop-width) {
     width: 194px;
     margin-bottom: 20px;
   }
+}
+
+.filter-travellers__fieldset-title-container:hover,
+.filter-travellers__fieldset-transport-title-container:hover,
+.filter-travellers__fieldset-level-title-container:hover {
+  opacity: 0.7;
+}
+
+.filter-travellers__fieldset-title-container:active,
+.filter-travellers__fieldset-transport-title-container:active,
+.filter-travellers__fieldset-level-title-container:active {
+  opacity: 0.3;
 }
 
 .filter-travellers__fieldset-title-container--opened {
@@ -331,6 +346,14 @@
   @media (min-width: global.$desktop-width) {
     margin-left: 0;
   }
+}
+
+.filter-travellers__options-custom-input-transport:hover {
+  opacity: 0.7;
+}
+
+.filter-travellers__options-custom-input-transport:active {
+  opacity: 0.3;
 }
 
 .filter-travellers__options-list {
@@ -437,6 +460,14 @@
   align-items: center;
 }
 
+.filter-travellers__options-label:hover {
+  opacity: 0.7;
+}
+
+.filter-travellers__options-label:active {
+  opacity: 0.3;
+}
+
 .filter-travellers__options-custom-input {
   width: 18px;
   height: 18px;
@@ -456,7 +487,7 @@
 
 .filter-travellers__options-input:checked
   + .filter-travellers__options-custom-input {
-  background: url(../../pug/svg-icons/icon-catalog-checked.svg) 50% 50%
+  background: url(../../assets/svg-icons/icon-catalog-checked.svg) 50% 50%
       no-repeat,
     global.$basic-white;
 }
@@ -551,40 +582,42 @@
   box-sizing: border-box;
   border: 1px solid global.$border-grey-1;
   text-align: center;
+  font-family: global.$medium;
+  font-style: normal;
+  font-size: 14px;
+  color: global.$basic-blue-2;
+  outline: none;
+  cursor: pointer;
 
   @media (min-width: global.$tablet-width) {
     width: 74px;
     padding: 18px 0 10px;
+    font-size: 20px;
   }
 
   @media (min-width: global.$desktop-width) {
     margin: 0;
     width: 97px;
-    padding: 18px 0 11px;
+    padding: 12px 0 11px;
     border-radius: 3px;
     border: 1px solid global.$border-grey-1;
     text-align: center;
+    font-size: 20px;
   }
+}
+
+.filter-travellers__filters-min-input:hover,
+.filter-travellers__filters-max-input:hover {
+  border: 1px solid global.$hover-button-blue;
+}
+
+.filter-travellers__filters-min-input:focus,
+.filter-travellers__filters-max-input:focus {
+  border: 1px solid global.$basic-blue;
 }
 
 .filter-travellers__filters-min-input {
   border-right: none;
-}
-
-.filter-travellers__filters-min-input::placeholder,
-.filter-travellers__filters-max-input::placeholder {
-  font-family: global.$medium;
-  font-style: normal;
-  font-size: 14px;
-  color: global.$basic-blue-2;
-
-  @media (min-width: global.$tablet-width) {
-    font-size: 20px;
-  }
-
-  @media (min-width: global.$desktop-width) {
-    font-size: 20px;
-  }
 }
 
 .filter-travellers__fieldset-slider-container {
@@ -711,6 +744,7 @@
   border: none;
   border-radius: 22px;
   background: global.$basic-white;
+  text-decoration: none;
 
   @media (min-width: global.$tablet-width) {
     width: 618px;
@@ -730,7 +764,8 @@
 }
 
 .filter-travellers__show-text {
-  display: inline-block;
+  display: block;
+  text-align: center;
   text-transform: uppercase;
   font-family: global.$bold;
   font-style: normal;
@@ -744,4 +779,12 @@
   @media (min-width: global.$desktop-width) {
     font-size: 20px;
   }
+}
+
+.filter-travellers__show-button:hover {
+  box-shadow: 0 3px 6px 0 global.$basic-black-transparent-4;
+}
+
+.filter-travellers__show-button:active {
+  background: global.$catalog-yellow;
 }

@@ -1,0 +1,36 @@
+@use '../global.scss';
+
+.transport-tooltip {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 85px);
+  width: 170px;
+  height: 56px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: global.$tooltip-dark-blue;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid global.$basic-white;
+  transition: transform 0.3s ease;
+}
+
+.transport-tooltip::before {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 14px;
+  top: -7px;
+  left: calc(50% - 7px);
+  transform: rotate(45deg);
+  background: global.$tooltip-dark-blue;
+}
+
+.transport-tooltip__text {
+  display: block;
+  color: global.$basic-white;
+  font-family: global.$blogger-sans;
+  font-style: normal;
+  font-size: 20px;
+}

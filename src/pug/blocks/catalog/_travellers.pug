@@ -1,37 +1,67 @@
+
+
 -
+  const prefixImgTraveller = '../../../assets/img/';
+  const prefixImgFooterTraveller = '../../assets/img/';
+
+
     const FIRSOVA_COUNTRIES = [
-        {src: '../../assets/img/sri-lanka-flag.png', title: 'Шри-Ланка'},
-        {src: '../../assets/img/thailand-flag.png', title: 'Таиланд'},
-        {src: '../../assets/img/seychelles-flag.png', title: 'Сейшелы'},
+        {src: prefixImgTraveller + 'sri-lanka-flag.png', title: 'Шри-Ланка'},
+        {src: prefixImgTraveller + 'thailand-flag.png', title: 'Таиланд'},
+        {src: prefixImgTraveller + 'seychelles-flag.png', title: 'Сейшелы'},
     ];
+    
+    const FIRSOVA_IMGS = {
+        mobile: prefixImgTraveller + "firsova-catalog-mobile.png",
+        tablet: prefixImgTraveller + "firsova-catalog-tablet.png",
+        desktop: prefixImgTraveller + "firsova-catalog-desktop.png",
+    }
     
     const FIRSOVA_TAGS = [
         "#ЗОЖ", "#ПП", "#Фитнес", "#пляж", "#авокадо", "#смузи"
     ];
     
     const DEMIN_COUNTRIES = [
-        {src: '../../assets/img/belgium-flag.png', title: 'Бельгия'},
-        {src: '../../assets/img/czech-flag.png', title: 'Чехия'},
+        {src: prefixImgTraveller + 'belgium-flag.png', title: 'Бельгия'},
+        {src: prefixImgTraveller + 'czech-flag.png', title: 'Чехия'},
     ];
+    
+     const DEMIN_IMGS = {
+        mobile: prefixImgTraveller + "demin-catalog-mobile.png",
+        tablet: prefixImgTraveller + "demin-catalog-tablet.png",
+        desktop: prefixImgTraveller + "demin-catalog-desktop.png",
+    }
     
     const DEMIN_TAGS = [
         "#бургер", "#бар", "#футбол", "#концерт", "#крафт"
     ];
     
     const SMOLOV_COUNTRIES = [
-        {src: '../../assets/img/usa-flag.png', title: 'США'},
-        {src: '../../assets/img/australia-flag.png', title: 'Австралия'},
-        {src: '../../assets/img/dominica-flag.png', title: 'Доминика'},
+        {src: prefixImgTraveller + 'usa-flag.png', title: 'США'},
+        {src: prefixImgTraveller + 'australia-flag.png', title: 'Австралия'},
+        {src: prefixImgTraveller + 'dominica-flag.png', title: 'Доминика'},
     ];
+    
+     const SMOLOV_IMGS = {
+        mobile: prefixImgTraveller + "smolov-catalog-mobile.png",
+        tablet: prefixImgTraveller + "smolov-catalog-tablet.png",
+        desktop: prefixImgTraveller + "smolov-catalog-desktop.png",
+    }
     
     const SMOLOV_TAGS = [
         "#рэп", "#тату", "#хайпбист", "#кроссовки", "#суприм"
     ];
     
     const ROGOVAYA_COUNTRIES = [
-        {src: '../../assets/img/uk-flag.png', title: 'Великобритания'},
-        {src: '../../assets/img/germany-flag.png', title: 'Германия'},
+        {src: prefixImgTraveller + 'uk-flag.png', title: 'Великобритания'},
+        {src: prefixImgTraveller + 'germany-flag.png', title: 'Германия'},
     ];
+    
+     const ROGOVAYA_IMGS = {
+        mobile: prefixImgTraveller + "rogovaya-catalog-mobile.png",
+        tablet: prefixImgTraveller + "rogovaya-catalog-tablet.png",
+        desktop: prefixImgTraveller + "rogovaya-catalog-desktop.png",
+    }
     
     const ROGOVAYA_TAGS = [
         "#образование", "#карьера", "#учеба", "#офис"
@@ -43,18 +73,20 @@ section.travellers
         ul.travellers__list 
             li.travellers__item 
                 include ./_traveller.pug
-                +traveller("../../assets/img/firsova-catalog-mobile.png", "../../assets/img/firsova-catalog-tablet.png", "../../assets/img/firsova-catalog-desktop.png", "Таня Фирсова", '1,5 м', FIRSOVA_TAGS, FIRSOVA_COUNTRIES, '99')
+                //- +traveller("../../assets/img/firsova-catalog-mobile.png", "../../assets/img/firsova-catalog-tablet.png", "../../assets/img/firsova-catalog-desktop.png", "Таня Фирсова", '1,5 м', FIRSOVA_TAGS, FIRSOVA_COUNTRIES, '99')
+                +traveller(FIRSOVA_IMGS.mobile, FIRSOVA_IMGS.tablet, FIRSOVA_IMGS.desktop, "Таня Фирсова", '1,5 м', FIRSOVA_TAGS, FIRSOVA_COUNTRIES, '99')
             li.travellers__item 
                 include ./_traveller.pug
-                +traveller("../../assets/img/demin-catalog-mobile.png", "../../assets/img/demin-catalog-tablet.png", "../../assets/img/demin-catalog-desktop.png", "Петя Демин", '1500', DEMIN_TAGS, DEMIN_COUNTRIES, '80')
+                //- +traveller("../../assets/img/demin-catalog-mobile.png", "../../assets/img/demin-catalog-tablet.png", "../../assets/img/demin-catalog-desktop.png", "Петя Демин", '1500', DEMIN_TAGS, DEMIN_COUNTRIES, '80')
+                +traveller(DEMIN_IMGS.mobile, DEMIN_IMGS.tablet, DEMIN_IMGS.desktop, "Петя Демин", '1500', DEMIN_TAGS, DEMIN_COUNTRIES, '80')
             li.travellers__item 
                 include ./_traveller.pug
-                +traveller("../../assets/img/smolov-catalog-mobile.png", "../../assets/img/smolov-catalog-tablet.png", "../../assets/img/smolov-catalog-desktop.png", "Марк Смолов", '170', SMOLOV_TAGS, SMOLOV_COUNTRIES, '25')
+                +traveller(SMOLOV_IMGS.mobile, SMOLOV_IMGS.tablet, SMOLOV_IMGS.desktop, "Марк Смолов", '170', SMOLOV_TAGS, SMOLOV_COUNTRIES, '25')
             li.travellers__item 
                 include ./_traveller.pug
-                +traveller("../../assets/img/rogovaya-catalog-mobile.png", "../../assets/img/rogovaya-catalog-tablet.png", "../../assets/img/rogovaya-catalog-desktop.png", "Лариса Роговая", '23', ROGOVAYA_TAGS, ROGOVAYA_COUNTRIES, '50')
+                +traveller(ROGOVAYA_IMGS.mobile, ROGOVAYA_IMGS.tablet, ROGOVAYA_IMGS.desktop, "Лариса Роговая", '23', ROGOVAYA_TAGS, ROGOVAYA_COUNTRIES, '50')
                 
-        a.travellers__show-more-button 
+        a.travellers__show-more-button(href="#") 
             include ../../../assets/svg-icons/show-more-plus-icon.svg 
             span.travellers__show-more-text Показать еще
             

@@ -79,7 +79,16 @@
     font-style: normal;
     font-size: 20px;
     color: global.$special-grey;
+    text-decoration: none;
   }
+}
+
+.countries-popup-desktop__letter-item-text:hover {
+  opacity: 0.7;
+}
+
+.countries-popup-desktop__letter-item-text:active {
+  opacity: 0.3;
 }
 
 .countries-popup-desktop__hide-button {
@@ -90,7 +99,21 @@
     padding: 37px 0;
     border-radius: 22px;
     background: global.$catalog-button-blue;
+    text-decoration: none;
   }
+}
+
+.countries-popup-desktop__hide-button:hover {
+  background: global.$hover-button-blue-3;
+}
+
+.countries-popup-desktop__hide-button:active {
+  background: global.$hover-button-blue-3;
+}
+
+.countries-popup-desktop__hide-button:active svg,
+.countries-popup-desktop__hide-button:active span {
+  opacity: 0.3;
 }
 
 .countries-popup-desktop__hide-button-container {

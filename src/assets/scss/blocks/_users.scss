@@ -197,11 +197,20 @@
   font-family: global.$bold;
   font-style: normal;
   font-size: 21px;
+  text-decoration: none;
 
   @media (min-width: global.$tablet-width) {
     font-size: 24px;
     margin: 0 0 20px 0;
   }
+}
+
+.users__item-username:hover {
+  opacity: 0.7;
+}
+
+.users__item-username:active {
+  opacity: 0.3;
 }
 
 .users__item-username::before {
@@ -268,6 +277,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.users__item-transport-item {
+  position: relative;
+}
+
+.users__item-transport-item:hover .transport-tooltip {
+  display: flex;
 }
 
 .users__item-transport-item + .users__item-transport-item {
@@ -349,6 +366,7 @@
 .users__item-img-container {
   position: relative;
   width: 270px;
+  overflow: hidden;
 
   @media (min-width: global.$tablet-width) {
     width: 285px;
@@ -356,9 +374,21 @@
 }
 
 .users__item-img-mobile {
+  transition: transform 0.3s ease;
+
   @media (min-width: global.$tablet-width) {
     display: none;
   }
+}
+
+.users__item-img-tablet {
+  transition: transform 0.3s ease;
+}
+
+.users__item-img-mobile:hover,
+.users__item-img-tablet:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .users__item-img-tablet {
@@ -370,6 +400,7 @@
 }
 
 .users__level-circle-container {
+  z-index: 2;
   position: absolute;
   top: 17px;
   left: 17px;

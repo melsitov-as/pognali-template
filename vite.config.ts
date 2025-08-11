@@ -6,7 +6,7 @@ import { format, resolve } from 'path';
 export default defineConfig(({ mode }) => {
   const FRONT_PATH = 'src';
   const env = loadEnv(mode, process.cwd(), '');
-  const prefix = env.VITE_BASE_URL || '/'; // Используем VITE_BASE_URL или корневой путь по умолчанию
+  // const prefix = env.VITE_BASE_URL || '/'; // Используем VITE_BASE_URL или корневой путь по умолчанию
 
   return {
     root: 'src',
@@ -40,7 +40,9 @@ export default defineConfig(({ mode }) => {
         pugOptions: {
           pretty: true, // Для форматирования HTML-кода
           // locals: {
-          //   prefix: prefix,
+          //   prefixHref: '',
+          //   prefixImg: '../../../assets/img/',
+          //   prefixImgFooter: '../../assets/img/',
           // },
         },
       }),
@@ -53,6 +55,7 @@ export default defineConfig(({ mode }) => {
         ],
       }),
     ],
-    base: '/pognali-template/',
+
+    // base: '/pognali-template/',
   };
 });

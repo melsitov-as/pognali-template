@@ -202,6 +202,14 @@
   }
 }
 
+.filter-countries__desktop-filter-item-link:hover {
+  opacity: 0.7;
+}
+
+.filter-countries__desktop-filter-item-link:active {
+  opacity: 0.3;
+}
+
 .filter-countries__desktop-filter-item-link--active {
   @media (min-width: global.$desktop-width) {
     color: global.$basic-blue-2;

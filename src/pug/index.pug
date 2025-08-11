@@ -1,3 +1,9 @@
+-
+  const prefixHref = '';
+  const prefixImg = '../../../assets/img/';
+  const prefixImgFooter = '../../assets/img/';
+
+
 doctype html
 html(lang="ru")
   head
@@ -6,15 +12,22 @@ html(lang="ru")
     title Погнали
   body.page
     include ./blocks/index/_header.pug
+    +urls(prefixHref, prefixImg, prefixImgFooter)
     
     main.main
       include ./blocks/index/_about.pug
+      
       include ./blocks/index/_routes.pug
+      +urls(prefixHref, prefixImg, prefixImgFooter)
+      
       include ./blocks/index/_users.pug
+      +urls(prefixHref, prefixImg, prefixImgFooter)
+      
       include ./blocks/index/_offers.pug
       include ./blocks/index/_account.pug
       include ./blocks/index/_address.pug
       include ./blocks/index/_map.pug
       
     include ./blocks/_footer.pug
+    +urls(prefixHref, prefixImg, prefixImgFooter)
         

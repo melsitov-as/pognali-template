@@ -155,3 +155,25 @@
     font-size: 24px;
   }
 }
+
+.address__button:hover {
+  background: global.$basic-dark-blue-2;
+}
+
+.address__button:hover svg path {
+  fill: global.$basic-white;
+}
+
+.address__button:hover .address__button-text {
+  color: global.$basic-white;
+}
+
+.address__button:active svg path {
+  fill: global.$basic-white;
+  opacity: 0.3;
+}
+
+.address__button:active .address__button-text {
+  color: global.$basic-white;
+  opacity: 0.3;
+}

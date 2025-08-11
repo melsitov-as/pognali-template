@@ -1,119 +1,136 @@
-section.users
-    .users__container
-        h2.users__title Попутчики
-        p.users__description 
-            | Все мы&nbsp;индивидуальны и&nbsp;у&nbsp;каждого свой взгляд
-            | на&nbsp;идеальный отдых. Одному нужен пляж и&nbsp;коктейль,<br />
-            | а&nbsp;другому маршрут для хайкинга.
-        p.users__description-extra 
-            | Теперь можно легко <br class="users__description-br-tablet" />
-            | найти единомышленников!
-            
-        ul.users__list  
-            li.users__item 
-                .users__item-img-container 
+mixin urls(prefixHref, prefixImg, prefixImgFooter)        
+    section.users
+        .users__container
+            h2.users__title Попутчики
+            p.users__description 
+                | Все мы&nbsp;индивидуальны и&nbsp;у&nbsp;каждого свой взгляд
+                | на&nbsp;идеальный отдых. Одному нужен пляж и&nbsp;коктейль,<br />
+                | а&nbsp;другому маршрут для хайкинга.
+            p.users__description-extra 
+                | Теперь можно легко <br class="users__description-br-tablet" />
+                | найти единомышленников!
                 
-                    .users__level-circle-container
-                        svg.users__static-circle(viewBox="0 0 100 100")
-                            circle.users__circle-track(cx="50" cy="50" r="45")
-                            circle.users__circle-partial-border.users__circle-partial-border--99(cx="50" cy="50" r="47")
-                        .users__circle-text-container
-                            span.users__circle-label 99
-                            span.users__circle-level-text level
-                            
-                    img.users__item-img-mobile(src="../../../assets/user-1-bg.png", alt="Пользователь 1", width="270", height="270")
-                    img.users__item-img-tablet(src="../../../assets/user-1-bg-tablet.png", alt="Пользователь 1", width="285", height="285")
+            ul.users__list  
+                li.users__item 
+                    .users__item-img-container 
                     
-                .users__item-container 
-                    ul.users__item-flags-list 
-                        li.users__item-flags-item 
-                            img.users__item-flag-img(src="../../../assets/sri-lanka-flag.png", alt="Шри-Ланка", width="35" height="25")      
-                        li.users__item-flags-item 
-                            img.users__item-flag-img(src="../../../assets/thailand-flag.png", alt="Таиланд", width="35" height="25") 
-                        li.users__item-flags-item 
-                            img.users__item-flag-img(src="../../../assets/seychelles-flag.png", alt="Сейшелы", width="35" height="25") 
-                            
-                    .users__item-text-container     
-                        h3.users__item-username Таня Фирсова
-                        ul.users__item-tags-list 
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #ЗОЖ 
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #ПП 
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #Фитнес
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #пляж 
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #авокадо 
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #смузи
+                        .users__level-circle-container
+                            svg.users__static-circle(viewBox="0 0 100 100")
+                                circle.users__circle-track(cx="50" cy="50" r="45")
+                                circle.users__circle-partial-border.users__circle-partial-border--99(cx="50" cy="50" r="47")
+                            .users__circle-text-container
+                                span.users__circle-label 99
+                                span.users__circle-level-text level
                                 
-                        ul.users__item-transport-list  
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/plane-icon.svg
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/bus-icon.svg
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/bicycle-icon.svg
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/run-icon.svg
+                        img.users__item-img-mobile(src=prefixImg + "user-1-bg.png", alt="Пользователь 1", width="270", height="270")
+                        img.users__item-img-tablet(src=prefixImg + "user-1-bg-tablet.png", alt="Пользователь 1", width="285", height="285")
+                        
+                    .users__item-container 
+                        ul.users__item-flags-list 
+                            li.users__item-flags-item 
+                                img.users__item-flag-img(src=prefixImg + "sri-lanka-flag.png", alt="Шри-Ланка", width="35" height="25")      
+                            li.users__item-flags-item 
+                                img.users__item-flag-img(src=prefixImg + "thailand-flag.png", alt="Таиланд", width="35" height="25") 
+                            li.users__item-flags-item 
+                                img.users__item-flag-img(src=prefixImg + "seychelles-flag.png", alt="Сейшелы", width="35" height="25") 
+                                
+                        .users__item-text-container     
+                            a.users__item-username(href="#") Таня Фирсова
+                            ul.users__item-tags-list 
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #ЗОЖ 
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #ПП 
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #Фитнес
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #пляж 
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #авокадо 
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #смузи
                                     
-                                    
-            li.users__item 
-                .users__item-img-container 
-                
-                    .users__level-circle-container
-                        svg.users__static-circle(viewBox="0 0 100 100")
-                            circle.users__circle-track(cx="50" cy="50" r="45")
-                            circle.users__circle-partial-border.users__circle-partial-border--80(cx="50" cy="50" r="47")
-                        .users__circle-text-container
-                            span.users__circle-label 80
-                            span.users__circle-level-text level
-                            
-                    img.users__item-img-mobile(src="../../../assets/user-2-bg.png", alt="Пользователь 2", width="270", height="270")
-                    img.users__item-img-tablet(src="../../../assets/user-2-bg-tablet.png", alt="Пользователь 2", width="285", height="285")
+                            ul.users__item-transport-list  
+                                li.users__item-transport-item.users__item-transport-item--plane
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/plane-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Авиаперелет")
+                                li.users__item-transport-item 
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/bus-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Автотранспорт")
+                                li.users__item-transport-item 
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/bicycle-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Велосипед")
+                                li.users__item-transport-item 
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/run-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Пешком")
+                                        
+                                        
+                li.users__item 
+                    .users__item-img-container 
                     
-                .users__item-container 
-                    ul.users__item-flags-list 
-                        li.users__item-flags-item 
-                            img.users__item-flag-img(src="../../../assets/belgium-flag.png", alt="Бельгия", width="35" height="25")      
-                        li.users__item-flags-item 
-                            img.users__item-flag-img(src="../../../assets/czech-flag.png", alt="Чехия", width="35" height="25") 
-                            
-                    .users__item-text-container     
-                        h3.users__item-username Петя Демин
-                        ul.users__item-tags-list 
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #бургер
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #бар
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #футбол
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #концерт
-                            li.users__item-tag
-                                a.users__item-tag-link(href="#") #крафт 
+                        .users__level-circle-container
+                            svg.users__static-circle(viewBox="0 0 100 100")
+                                circle.users__circle-track(cx="50" cy="50" r="45")
+                                circle.users__circle-partial-border.users__circle-partial-border--80(cx="50" cy="50" r="47")
+                            .users__circle-text-container
+                                span.users__circle-label 80
+                                span.users__circle-level-text level
                                 
-                        ul.users__item-transport-list  
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/plane-icon.svg
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/bus-icon.svg
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/bicycle-icon.svg
-                            li.users__item-transport-item 
-                                a.users__item-transport-button(href="#") 
-                                    include ../../../assets/svg-icons/run-icon.svg
+                        img.users__item-img-mobile(src=prefixImg + "user-2-bg.png", alt="Пользователь 2", width="270", height="270")
+                        img.users__item-img-tablet(src=prefixImg + "user-2-bg-tablet.png", alt="Пользователь 2", width="285", height="285")
+                        
+                    .users__item-container 
+                        ul.users__item-flags-list 
+                            li.users__item-flags-item 
+                                img.users__item-flag-img(src=prefixImg + "belgium-flag.png", alt="Бельгия", width="35" height="25")      
+                            li.users__item-flags-item 
+                                img.users__item-flag-img(src=prefixImg + "czech-flag.png", alt="Чехия", width="35" height="25") 
+                                
+                        .users__item-text-container     
+                            a.users__item-username(href="#") Петя Демин
+                            ul.users__item-tags-list 
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #бургер
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #бар
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #футбол
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #концерт
+                                li.users__item-tag
+                                    a.users__item-tag-link(href="#") #крафт 
                                     
-                                    
-        a.users__button(href="#")
-            span.users__button-text Показать всеx
-            include ../../../assets/svg-icons/button-triangle-icon.svg  
+                            ul.users__item-transport-list  
+                                li.users__item-transport-item 
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/plane-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Авиаперелет")
+                                li.users__item-transport-item 
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/bus-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Автотранспорт")
+                                li.users__item-transport-item 
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/bicycle-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Велосипед")
+                                li.users__item-transport-item 
+                                    a.users__item-transport-button(href="#") 
+                                        include ../../../assets/svg-icons/run-icon.svg
+                                    include ../_transport-tooltip.pug
+                                    +transport-tooltip("Пешком")
+                                        
+                                        
+            a.users__button(href="#")
+                span.users__button-text Показать всеx
+                include ../../../assets/svg-icons/button-triangle-icon.svg  

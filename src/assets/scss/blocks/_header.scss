@@ -86,6 +86,16 @@
   }
 }
 
+.header__logo-link:hover,
+.header__bottom-logo-link:hover {
+  opacity: 0.7;
+}
+
+.header__logo-link:active,
+.header__bottom-logo-link:active {
+  opacity: 0.3;
+}
+
 .header__logo-link svg {
   @media (min-width: global.$tablet-width) {
     display: none;
@@ -393,6 +403,11 @@
 
 .header__nav-link--email:hover,
 .header__bottom-nav-link--email:hover {
+  background: global.$special-orange;
+}
+
+.header__nav-link--email:active,
+.header__bottom-nav-link--email:active {
   background: global.$special-orange;
 }
 

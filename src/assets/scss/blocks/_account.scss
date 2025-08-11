@@ -143,6 +143,18 @@
   }
 }
 
+.account__input:hover {
+  background: global.$basic-grey-2;
+}
+
+.account__input:focus {
+  background: global.$basic-dark-blue;
+  box-sizing: border-box;
+  padding: 31px 0 28px 36px;
+  border: 3px solid global.$basic-white;
+  outline: none;
+}
+
 .account__input::placeholder {
   font-family: global.$bold;
   font-size: 18px;
@@ -153,6 +165,14 @@
     font-size: 24px;
     border-radius: 15px 0 0 15px;
   }
+}
+
+.account__input:focus::placeholder {
+  color: global.$basic-white;
+}
+
+.account__input:invalid::placeholder {
+  color: global.$error-red;
 }
 
 .account__form-button {

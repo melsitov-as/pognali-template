@@ -1,43 +1,45 @@
-.header-routes 
-    .header-routes__container 
-        .header-routes__nav-container 
-            a.header-routes__logo-link(href="index.html")
-                include ../../../assets/svg-icons/logo-mobile.svg  
-                img.header-routes__tablet-logo(src="../../../assets/img/logo-tablet.png", alt="Погнали", width="166", height="42") 
-                img.header-routes__desktop-logo(src="../../../assets/img/logo-desktop.png", alt="Погнали", width="200", height="52")
-                
-            a.header-routes__open-button(href="#")  
-                include ../../../assets/svg-icons/hamburger-icon.svg  
-                
-            ul.header-routes__site-nav-list  
-                li.header-routes__site-nav-item 
-                    a.header-routes__site-nav-link(href="index.html")  О сервисе
-                li.header-routes__site-nav-item 
-                    a.header-routes__site-nav-link(href="../../../assets/html/routes/routes.html")  Направления
-                li.header-routes__site-nav-item 
-                    a.header-routes__site-nav-link(href="../../../assets/html/catalog/catalog.html") Попутчики
-                     
-            ul.header-routes__nav-menu-list  
-                li.header-routes__nav-menu-item.header-routes__nav-menu-item--phone 
-                    a.header-routes__nav-link.header-routes__nav-link--phone(href="#")
-                        include ../../../assets/svg-icons/call-icon.svg
-                li.header-routes__nav-menu-item.header-routes__nav-menu-item--email       
-                    a.header-routes__nav-link.header-routes__nav-link--email(href="#")
-                        include ../../../assets/svg-icons/mail-icon.svg  
-                li.header-routes__nav-menu-item.header-routes__nav-menu-item--authorization 
-                    a.header-routes__nav-menu-link.header-routes__nav-menu-link--authorization Авторизация
+mixin urls(prefixHref, prefixImg, prefixImgFooter)
+    .header-routes 
+        .header-routes__container 
+            .header-routes__nav-container 
+                a.header-routes__logo-link(href=prefixHref + "index.html")
+                    include ../../../assets/svg-icons/logo-mobile.svg  
+                    img.header-routes__tablet-logo(src=prefixImg + "logo-tablet.png", alt="Погнали", width="166", height="42") 
+                    img.header-routes__desktop-logo(src=prefixImg + "logo-desktop.png", alt="Погнали", width="200", height="52")
                     
-        .header-routes__title-content-container 
-            h1.header-routes__title Направления
-            
-            .header-routes__level-circle-container
-                svg.header-routes__static-circle(viewBox="0 0 100 100")
-                    circle.header-routes__circle-track(cx="50" cy="50" r="45")
-                    circle.header-routes__circle-partial-border.header-routes__circle-partial-border--80(cx="50" cy="50" r="47")
-                .header-routes__circle-text-container
-                    span.header-routes__circle-label 80
-                    span.header-routes__circle-level-text level
+                a.header-routes__open-button(href="#")  
+                    include ../../../assets/svg-icons/hamburger-icon.svg  
                     
-            .header-routes__user-img-container
-                img.header-routes__user-img(src="../../../assets/assets/img/header-other-user-img.png", alt="Фото пользователя")
+                ul.header-routes__site-nav-list  
+                    li.header-routes__site-nav-item 
+                        a.header-routes__site-nav-link(href=prefixHref + "index.html")  О сервисе
+                    li.header-routes__site-nav-item 
+                        a.header-routes__site-nav-link(href=prefixHref + "routes.html")  Направления
+                    li.header-routes__site-nav-item 
+                        a.header-routes__site-nav-link(href=prefixHref + "catalog.html") Попутчики
+                        
+                ul.header-routes__nav-menu-list  
+                    li.header-routes__nav-menu-item.header-routes__nav-menu-item--phone 
+                        a.header-routes__nav-link.header-routes__nav-link--phone(href="#")
+                            include ../../../assets/svg-icons/call-icon.svg
+                    li.header-routes__nav-menu-item.header-routes__nav-menu-item--email       
+                        a.header-routes__nav-link.header-routes__nav-link--email(href="#")
+                            include ../../../assets/svg-icons/mail-icon.svg  
+                    li.header-routes__nav-menu-item.header-routes__nav-menu-item--authorization 
+                        a.header-routes__nav-link.header-routes__nav-link--authorization(href="#") 
+                            span Авторизация
+                        
+            .header-routes__title-content-container 
+                h1.header-routes__title Направления
                 
+                .header-routes__level-circle-container
+                    svg.header-routes__static-circle(viewBox="0 0 100 100")
+                        circle.header-routes__circle-track(cx="50" cy="50" r="45")
+                        circle.header-routes__circle-partial-border.header-routes__circle-partial-border--80(cx="50" cy="50" r="47")
+                    .header-routes__circle-text-container
+                        span.header-routes__circle-label 80
+                        span.header-routes__circle-level-text level
+                        
+                .header-routes__user-img-container
+                    img.header-routes__user-img(src=prefixImg + "header-other-user-img.png", alt="Фото пользователя")
+                    

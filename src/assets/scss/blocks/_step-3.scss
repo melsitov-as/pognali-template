@@ -305,6 +305,7 @@
   display: flex;
   justify-content: flex-start;
   text-align: left;
+  cursor: pointer;
 
   @media (min-width: global.$tablet-width) {
     width: 500px;
@@ -318,6 +319,36 @@
     height: 142px;
     padding: 23px 0 0 26px;
   }
+}
+
+.step-3__country-textarea-error-message {
+  display: none;
+  padding: 18px;
+  width: 730px;
+  height: 56px;
+  background: global.$error-bg-pink;
+  color: global.$error-red;
+  font-family: global.$blogger-sans;
+  font-style: normal;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.step-3__country-textarea:hover {
+  border: 1px solid global.$hover-button-blue;
+}
+
+.step-3__country-textarea:active {
+  border: 1px solid global.$basic-blue;
+}
+
+.step-3__country-textarea:invalid {
+  border: 1px solid global.$error-red;
+  border-bottom: none;
+}
+
+.step-3__country-textarea:invalid + .step-3__country-textarea-error-message {
+  display: block;
 }
 
 .step-3__country-textarea::placeholder {
@@ -389,6 +420,19 @@
   }
 }
 
+.step-3__submit-button:hover {
+  background: global.$special-dark-yellow;
+}
+
+.step-3__submit-button:active {
+  background: global.$special-dark-yellow;
+}
+
+.step-3__submit-button:active span,
+.step-3__submit-button:active svg {
+  opacity: 0.3;
+}
+
 .step-3__prev-step-button {
   width: 230px;
   text-decoration: none;
@@ -400,6 +444,14 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.step-3__prev-step-button:hover {
+  opacity: 0.7;
+}
+
+.step-3__prev-step-button:active {
+  opacity: 0.3;
 }
 
 .step-3__prev-step-text {

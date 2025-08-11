@@ -11,7 +11,7 @@ mixin traveller(imageUrl, imageUrlTablet, imageUrlDesktop, username, subscribers
             .traveller__online-status.traveller__online-status--offline 
             
             .traveller__username-container 
-                h2.traveller__username= username
+                a.traveller__username(href="#")= username
                 .traveller__username-online-status.traveller__username-online-status--offline 
             
             p.traveller__subscribers-count=subscribers
@@ -34,14 +34,18 @@ mixin traveller(imageUrl, imageUrlTablet, imageUrlDesktop, username, subscribers
             fieldset.traveller__transport 
                 label.traveller__transport-title Транспорт:
                 ul.traveller__transport-list 
+                    li.traveller__transport-item
+                        a.traveller__transport-link(href="#")    
+                            include ../../../assets/svg-icons/plane-icon.svg  
                     li.traveller__transport-item    
-                        include ../../../assets/svg-icons/plane-icon.svg  
+                        a.traveller__transport-link(href="#")
+                            include ../../../assets/svg-icons/bus-icon.svg  
                     li.traveller__transport-item    
-                        include ../../../assets/svg-icons/bus-icon.svg  
+                        a.traveller__transport-link(href="#")
+                            include ../../../assets/svg-icons/bicycle-icon.svg 
                     li.traveller__transport-item    
-                        include ../../../assets/svg-icons/bicycle-icon.svg 
-                    li.traveller__transport-item    
-                        include ../../../assets/svg-icons/run-icon.svg  
+                        a.traveller__transport-link(href="#")
+                            include ../../../assets/svg-icons/run-icon.svg  
                         
             fieldset.traveller__level 
                 label.traveller__level-title Левел:
@@ -55,6 +59,6 @@ mixin traveller(imageUrl, imageUrlTablet, imageUrlDesktop, username, subscribers
                             span.traveller__circle-label=level
                             span.traveller__circle-level-text level
                 
-            a.traveller__call-button 
+            a.traveller__call-button(href="#") 
                 span.traveller__call-button-text Позвать!
                 

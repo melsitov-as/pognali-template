@@ -217,6 +217,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
 
   @media (min-width: global.$tablet-width) {
     width: 369px;
@@ -227,6 +228,36 @@
   @media (min-width: global.$desktop-width) {
     width: 730px;
   }
+}
+
+.step-2__country-text-container:hover {
+  border: 1px solid global.$hover-button-blue;
+}
+
+.step-2__choose-country-container:hover {
+  border: 1px solid global.$hover-button-blue;
+}
+
+.step-2__choose-country-container:hover
+  .step-2__choose-country-open-button
+  svg
+  g {
+  opacity: 1;
+}
+
+.step-2__choose-country-container:hover
+  .step-2__choose-country-open-button
+  svg
+  path {
+  fill: global.$hover-button-blue;
+}
+
+.step-2__country-text-container:hover .step-2__country-open-button svg g {
+  opacity: 1;
+}
+
+.step-2__country-text-container:hover .step-2__country-open-button svg path {
+  fill: global.$hover-button-blue;
 }
 
 .step-2__country-text {
@@ -389,6 +420,7 @@
   border: 1px solid global.$border-grey-1;
   border-radius: 5px;
   box-sizing: border-box;
+  cursor: pointer;
 
   @media (min-width: global.$tablet-width) {
     width: 369px;
@@ -401,6 +433,14 @@
   @media (min-width: global.$desktop-width) {
     width: 730px;
   }
+}
+
+.step-2__choose-country-container:hover {
+  border: 1px solid global.$hover-button-blue;
+}
+
+.step-2__choose-country-text-container {
+  text-decoration: none;
 }
 
 .step-2__choose-country-container::after {
@@ -543,6 +583,10 @@
   }
 }
 
+.step-2__add-country-text-container {
+  text-decoration: none;
+}
+
 .step-2__add-country-text {
   display: block;
   font-family: global.$medium;
@@ -651,6 +695,19 @@
   }
 }
 
+.step-2__next-step-button:hover {
+  background: global.$special-dark-yellow;
+}
+
+.step-2__next-step-button:active {
+  background: global.$special-dark-yellow;
+}
+
+.step-2__next-step-button:active span,
+.step-2__next-step-button:active svg {
+  opacity: 0.3;
+}
+
 .step-2__next-step-text {
   text-transform: uppercase;
   font-family: global.$bold;
@@ -688,6 +745,14 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.step-2__prev-step-button:hover {
+  opacity: 0.7;
+}
+
+.step-2__prev-step-button:active {
+  opacity: 0.3;
 }
 
 .step-2__prev-step-text {

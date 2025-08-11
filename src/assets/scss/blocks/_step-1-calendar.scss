@@ -44,11 +44,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   @media (min-width: global.$tablet-width) {
     width: 46px;
     height: 36px;
   }
+}
+
+.step-1-calendar__menu-next-button:hover svg path,
+.step-1-calendar__menu-prev-button:hover svg path {
+  fill: global.$hover-button-blue;
+}
+
+.step-1-calendar__menu-next-button:active svg path,
+.step-1-calendar__menu-prev-button:active svg path {
+  fill: global.$basic-blue-2;
 }
 
 .step-1-calendar__menu-prev-button svg {
