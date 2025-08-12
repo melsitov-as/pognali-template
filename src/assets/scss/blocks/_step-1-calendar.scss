@@ -121,7 +121,7 @@
 }
 
 .step-1-calendar__table-day-name-text {
-  display: inline-block;
+  display: block;
   text-align: center;
   width: 28px;
   font-family: global.$blogger-sans;
@@ -138,9 +138,9 @@
   display: none;
 
   @media (min-width: global.$tablet-width) {
-    display: inline-block;
+    display: block;
     text-align: center;
-    width: 74px;
+    width: 28px;
     margin-left: 25px;
     font-family: global.$blogger-sans;
     font-style: normal;
@@ -192,6 +192,20 @@
     margin-top: 12px;
     margin-left: 22px;
     text-align: left;
+  }
+}
+
+.step-1-calendar__table-day-number-in,
+.step-1-calendar__table-day-number-out {
+  display: none;
+
+  @media (min-width: global.$desktop-width) {
+    display: block;
+    font-family: global.$blogger-sans;
+    font-style: normal;
+    font-size: 18px;
+    color: global.$basic-white;
+    margin: 3px 0 0 20px;
   }
 }
 

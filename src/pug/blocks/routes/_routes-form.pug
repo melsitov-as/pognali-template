@@ -50,10 +50,10 @@ mixin urls(prefixHref, prefixImg, prefixImgFooter)
                                 span.step-1__duration-text-extra Дн. 
                                 .step-1__duration-input-container 
                                     button.step-1__duration-minus-button
-                                            include ../../../assets/svg-icons/minus-icon.svg
-                                    input.step-1__duration-input(type="text", name="duration", id="duration", value="2")
+                                        include ../../../assets/svg-icons/minus-icon.svg
+                                    input.step-1__duration-input(type="text", name="duration", id="duration", value="3")
                                     button.step-1__duration-plus-button
-                                            include ../../../assets/svg-icons/plus-icon.svg
+                                        include ../../../assets/svg-icons/plus-icon.svg
                                             
                             label.step-1__children-label(for="children")
                                 input.step-1__children-input.visually-hidden(type="checkbox", name="children", id="children")
@@ -163,12 +163,14 @@ mixin urls(prefixHref, prefixImg, prefixImgFooter)
                                                 td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--expired 
                                                     span.step-1-calendar__table-day-number-text 25
                                                 td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--current.step-1-calendar__table-day-number--choosen
-                                                    span.step-1-calendar__table-day-number-text 26 <br class="step-1-calendar__table-br-desktop"> Заезд
+                                                    span.step-1-calendar__table-day-number-text 26
+                                                    span.step-1-calendar__table-day-number-in Заезд
                                                     //- span.step-1-calendar__table-day-number-text-case Заезд 
                                                 td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--choosen 
                                                     span.step-1-calendar__table-day-number-text 27
                                                 td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--choosen 
-                                                    span.step-1-calendar__table-day-number-text 28 <br class="step-1-calendar__table-br-desktop"> Выезд
+                                                    span.step-1-calendar__table-day-number-text 28 
+                                                    span.step-1-calendar__table-day-number-out  Выезд
                                                     //- span.step-1-calendar__table-day-number-text-case Выезд 
                                                 td.step-1-calendar__table-day-number.step-1-calendar__table-day-number--future 
                                                     span.step-1-calendar__table-day-number-text 29

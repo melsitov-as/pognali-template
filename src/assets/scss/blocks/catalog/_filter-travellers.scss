@@ -621,6 +621,9 @@
 }
 
 .filter-travellers__fieldset-slider-container {
+  height: 23px;
+  position: relative;
+
   @media (min-width: global.$tablet-width) {
     width: 280px;
     height: 40px;
@@ -661,7 +664,7 @@
   width: 152px;
   height: 2px;
   background: global.$basic-blue-2;
-  top: 0;
+  top: -1px;
   right: 0;
 
   @media (min-width: global.$tablet-width) {
