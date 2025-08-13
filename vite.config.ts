@@ -56,6 +56,6 @@ export default defineConfig(({ mode }) => {
       }),
     ],
 
-    // base: '/pognali-template/',
+    base: '/pognali-template/',
   };
 });
