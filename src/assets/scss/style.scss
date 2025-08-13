@@ -21,8 +21,8 @@
 @use 'blocks/routes/_routes-form';
 @use 'blocks/routes/_step-1';
 @use 'blocks/routes/_step-1-calendar';
-@use 'blocks/routes_step-2';
-@use 'blocks/routes_step-3';
+@use 'blocks/routes/_step-2';
+@use 'blocks/routes/_step-3';
 
 @use 'blocks/catalog/_header-catalog';
 @use 'blocks/catalog/_filter-countries';
