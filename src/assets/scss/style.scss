@@ -1,31 +1,28 @@
 @use 'global.scss';
 @use 'fonts.scss';
 
-@use 'blocks/_header.scss';
-@use 'blocks/_main';
-@use 'blocks/_about';
-@use 'blocks/_routes';
-@use 'blocks/_users';
-@use 'blocks/_offers';
-@use 'blocks/_account';
-@use 'blocks/_address';
-@use 'blocks/_map';
-@use 'blocks/_footer';
-@use 'blocks/_header-mobile-popup';
-@use 'blocks/_header-scroll-menu';
-@use 'blocks/_business-rates';
-@use 'blocks/transport-tooltip';
+@use 'blocks/index/_header.scss';
+@use 'blocks/index/_about';
+@use 'blocks/index/_routes';
+@use 'blocks/index/_users';
+@use 'blocks/index/_offers';
+@use 'blocks/index/_account';
+@use 'blocks/index/_address';
+@use 'blocks/index/_map';
+@use 'blocks/index/_header-mobile-popup';
+@use 'blocks/index/_header-scroll-menu';
+@use 'blocks/index/_business-rates';
 
-@use 'blocks/_header-routes';
-@use 'blocks/_user-section';
-@use 'blocks/_plans';
-@use 'blocks/_add-plan';
-@use 'blocks/_countries-popup';
-@use 'blocks/_routes-form';
-@use 'blocks/_step-1';
-@use 'blocks/_step-1-calendar';
-@use 'blocks/_step-2';
-@use 'blocks/_step-3';
+@use 'blocks/routes/_header-routes';
+@use 'blocks/routes/_user-section';
+@use 'blocks/routes/_plans';
+@use 'blocks/routes/_add-plan';
+@use 'blocks/routes/_countries-popup';
+@use 'blocks/routes/_routes-form';
+@use 'blocks/routes/_step-1';
+@use 'blocks/routes/_step-1-calendar';
+@use 'blocks/routes_step-2';
+@use 'blocks/routes_step-3';
 
 @use 'blocks/catalog/_header-catalog';
 @use 'blocks/catalog/_filter-countries';
@@ -33,3 +30,8 @@
 @use 'blocks/catalog/_travellers';
 @use 'blocks/catalog/_traveller';
 @use 'blocks/catalog/_countries-popup-desktop';
+
+@use 'blocks/_main';
+@use 'blocks/_footer';
+
+@use 'blocks/transport-tooltip';

@@ -1,4 +1,4 @@
-@use '../global.scss';
+@use '../../global.scss';
 
 .account {
   position: relative;
@@ -153,6 +153,10 @@
   padding: 31px 0 28px 36px;
   border: 3px solid global.$basic-white;
   outline: none;
+  font-family: global.$bold;
+  font-size: 18px;
+  font-style: normal;
+  color: global.$basic-white;
 }
 
 .account__input::placeholder {

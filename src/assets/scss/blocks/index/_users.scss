@@ -1,4 +1,4 @@
-@use '../global.scss';
+@use '../../global.scss';
 
 .users {
   position: relative;
@@ -367,6 +367,7 @@
   position: relative;
   width: 270px;
   overflow: hidden;
+  border-radius: 20px 20px 0 0;
 
   @media (min-width: global.$tablet-width) {
     width: 285px;
@@ -388,7 +389,7 @@
 .users__item-img-mobile:hover,
 .users__item-img-tablet:hover {
   transform: scale(1.1);
-  z-index: 1;
+  z-index: 3;
 }
 
 .users__item-img-tablet {

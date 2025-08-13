@@ -40,9 +40,48 @@
   }
 }
 
-.traveller__user-img-mobile {
+.traveller__img-container {
   grid-row: 1/2;
   grid-column: 1/2;
+
+  @media (min-width: global.$tablet-width) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 190px;
+    height: 190px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    grid-row: 1/7;
+    grid-column: 1/2;
+    overflow: hidden;
+    width: 285px;
+    height: 285px;
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.traveller__img-tablet-container {
+  display: none;
+
+  @media (min-width: global.$tablet-width) {
+    display: block;
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    margin: 21px 0 0 36px;
+    border-radius: 13px;
+  }
+
+  @media (min-width: global.$desktop-width) {
+    display: none;
+  }
+}
+
+.traveller__user-img-mobile {
+  // grid-row: 1/2;
+  // grid-column: 1/2;
+  transition: transform 0.3s ease;
 
   @media (min-width: global.$tablet-width) {
     display: none;
@@ -54,9 +93,10 @@
 
   @media (min-width: global.$tablet-width) {
     display: block;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    margin: 21px 0 0 36px;
+    // grid-row: 1/2;
+    // grid-column: 1/2;
+    // margin: 21px 0 0 36px;
+    transition: transform 0.3s ease;
   }
 
   @media (min-width: global.$desktop-width) {
@@ -66,12 +106,20 @@
 
 .traveller__user-img-desktop {
   display: none;
+  transition: transform 0.3s ease;
 
   @media (min-width: global.$desktop-width) {
     display: block;
-    grid-row: 1/7;
-    grid-column: 1/2;
+    // grid-row: 1/7;
+    // grid-column: 1/2;
   }
+}
+
+.traveller__user-img-mobile:hover,
+.traveller__user-img-tablet:hover,
+.traveller__user-img-desktop:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .traveller__like-button {
@@ -502,6 +550,14 @@
   }
 }
 
+.traveller__transport-item {
+  position: relative;
+}
+
+.traveller__transport-item:hover .transport-tooltip {
+  display: flex;
+}
+
 .traveller__level {
   position: absolute;
   top: 3px;
@@ -542,6 +598,7 @@
 }
 
 .traveller__level-circle-container {
+  z-index: 3;
   position: absolute;
   top: 28px;
   left: 9px;

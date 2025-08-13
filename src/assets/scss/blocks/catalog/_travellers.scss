@@ -137,7 +137,9 @@
 }
 
 .travellers__pagination-numbers-link:active {
-  opacity: 0.3;
+  opacity: 1;
+  border-radius: 50%;
+  background: global.$basic-yellow;
 }
 
 .travellers__pagination-numbers-link--active {
