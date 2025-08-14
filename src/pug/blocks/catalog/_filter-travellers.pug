@@ -116,14 +116,11 @@ section.filter-travellers
                             
                     .filter-travellers__fieldset-slider-numbers-container 
                         .filter-travellers__fieldset-numbers-container 
-                            input.filter-travellers__filters-min-input(type="text", value="30")
-                            input.filter-travellers__filters-max-input(type="text", value="100")    
+                            input.filter-travellers__filters-min-input(type="text", value="30", id="input-0")
+                            input.filter-travellers__filters-max-input(type="text", value="100", id="input-1")    
                                 
                         .filter-travellers__fieldset-slider-container 
-                            .filter-travellers__slider-bg-line 
-                            .filter-travellers__slider-front-line 
-                            .filter-travellers__slider-min-handler 
-                            .filter-travellers__slider-max-handler
+                            .range-slider(id="range-slider")
                 
             a.filter-travellers__show-button(href="#") 
                 span.filter-travellers__show-text Показать                      
