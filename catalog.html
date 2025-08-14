@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
-    <script type="module" crossorigin src="/pognali-template/assets/main-7vRepLKL.js"></script>
+    <script type="module" crossorigin src="/pognali-template/assets/catalog-DeScXw8M.js"></script>
+    <link rel="modulepreload" crossorigin href="/pognali-template/assets/main-7vRepLKL.js">
     <link rel="stylesheet" crossorigin href="/pognali-template/assets/main-CbYyP7A1.css">
+    <link rel="stylesheet" crossorigin href="/pognali-template/assets/catalog-C6Ktgv6t.css">
   </head>
 
-  <body class="page">
+  <body class="page">
     <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -642,14 +644,11 @@
 </span></a>
                   <div class="filter-travellers__fieldset-slider-numbers-container"> 
                     <div class="filter-travellers__fieldset-numbers-container"> 
-                      <input class="filter-travellers__filters-min-input" type="text" value="30">
-                      <input class="filter-travellers__filters-max-input" type="text" value="100">
+                      <input class="filter-travellers__filters-min-input" type="text" value="30" id="input-0">
+                      <input class="filter-travellers__filters-max-input" type="text" value="100" id="input-1">
                     </div>
                     <div class="filter-travellers__fieldset-slider-container"> 
-                      <div class="filter-travellers__slider-bg-line"> </div>
-                      <div class="filter-travellers__slider-front-line"> </div>
-                      <div class="filter-travellers__slider-min-handler"> </div>
-                      <div class="filter-travellers__slider-max-handler"></div>
+                      <div class="range-slider" id="range-slider"></div>
                     </div>
                   </div>
                 </fieldset>
